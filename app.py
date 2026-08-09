@@ -50,10 +50,39 @@ historia = {
         ]
     },
     "cena_janela": {
-        "texto": "Você ignora o aviso. A figura na plataforma vira o rosto lentamente... É você. Mas com um sorriso macabro. A janela de vidro de repente estilhaça.",
-        "imagem": "https://placehold.co/800x400/8B0000/FFFFFF?text=O+Reflexo",
-        "opcoes": [{"label": "Recomeçar pesadelo", "destino": "cap1_parte1", "reiniciar": True}]
+        "texto": "Você ignora o aviso da velha. A curiosidade é mais forte que o medo.\n\nA figura na plataforma termina de se virar. O sangue congela nas suas veias.\n\nO rosto é o seu. Exatamente o seu.\n\nMas há algo profundamente errado. Os olhos são perfeitamente brancos, sem íris ou pupilas. A boca está esticada em um sorriso que parece rasgar as bochechas.\n\nO seu 'duplo' levanta a mão e encosta um dedo longo no vidro, pelo lado de fora.\n\n*TOC.*\n\nO vidro trinca.\nA velha grita: 'Abaixe-se!'\n\nAs portas do trem se abrem com um chiado violento. O vento gelado invade o vagão, apagando as luzes. A coisa que tem o seu rosto acabou de entrar.",
+        "imagem": "https://placehold.co/800x400/1a1a2e/FFFFFF?text=A+Invasao",
+        "opcoes": [
+            {"label": "Obedecer à velha e se jogar no chão", "destino": "cena_chao"},
+            {"label": "Correr desesperadamente para o próximo vagão", "destino": "cena_fuga_vagao2"},
+            {"label": "Pegar o extintor de incêndio na parede para se defender", "destino": "cena_luta"}
+        ]
     },
+
+    # === RAMIFICAÇÕES QUE NASCEM DA CENA DA JANELA ===
+    "cena_chao": {
+        "texto": "Você se atira no chão entre os bancos, prendendo a respiração. No escuro, ouve passos pesados arrastando pelo corredor. *Shh... shh... shh...*\n\nOs passos param exatamente ao seu lado. Você vê dois pés pálidos descalços a centímetros do seu rosto.",
+        "imagem": "https://placehold.co/800x400/000000/FFFFFF?text=No+Escuro",
+        "opcoes": [
+            {"label": "Ficar completamente imóvel", "destino": "cap2_sobrevivencia"} # Cena a ser escrita depois
+        ]
+    },
+    
+    "cena_fuga_vagao2": {
+        "texto": "Você gira nos calcanhares e corre. O corredor parece infinito. Você passa pelo homem de sobretudo, que agora está rindo alto. Alcança a porta do próximo vagão, gira a trava e entra com tudo, trancando-a atrás de si.",
+        "imagem": "https://placehold.co/800x400/221111/FFFFFF?text=Fuga+Para+Frente",
+        "opcoes": [
+            {"label": "Olhar o que tem no Vagão 2", "destino": "cap2_vagao2"} # Cena a ser escrita depois
+        ]
+    },
+    
+    "cena_luta": {
+        "texto": "Adrenalina pura. Você arranca o extintor vermelho da parede. No momento em que a luz pisca, a criatura está bem na sua frente. Você balança o cilindro de metal com toda a força em direção à cabeça dela.",
+        "imagem": "https://placehold.co/800x400/550000/FFFFFF?text=Reacao",
+        "opcoes": [
+            {"label": "Ver o resultado do golpe", "destino": "cap2_consequencia_luta"} # Cena a ser escrita depois
+        ]
+    }
     
     # === ADICIONE ESTAS CENAS AQUI PARA CORRIGIR O ERRO ===
     "cena_velha": {
