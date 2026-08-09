@@ -25,26 +25,26 @@ def processar_escolha(nova_cena, memoria_ganha=None, reiniciar=False):
 # ==========================================
 historia = {
     "cap1_parte1": {
-        "texto": "Você acorda com um solavanco.\n\nPor alguns segundos, não abre os olhos. Há um ruído constante ao seu redor. Metal contra metal. O som distante de rodas correndo sobre trilhos.\n\nVocê verifica o horário. **00:16**. O relógio do trem também marca **00:16**. \n\nMas os segundos do seu celular continuam passando... e o relógio do trem permanece imóvel.",
-        "imagem": "despertar.png",
+        "texto": "Você acorda com um solavanco violento, sua cabeça lateja.\n\nPor alguns segundos, você não abre os olhos, tentando lembrar como foi parar ali. A última lembrança é um borrão de chuva e faróis... nada mais. Há um ruído constante ao seu redor. Metal contra metal. O som rítmico e distante de rodas correndo sobre trilhos.\n\nVocê está em um trem. Mas como? E para onde?\n\nVocê tateia o bolso e puxa o celular para verificar as horas. O visor brilha: **00:16**. Você levanta os olhos para o painel digital na parede do vagão; o relógio oficial também marca **00:16**.\n\nVocê espera o tempo passar. Os segundos do seu celular continuam correndo... mas o relógio do trem permanece imóvel, congelado naquele minuto.",
+        "imagem": "https://placehold.co/800x400/111111/FFFFFF?text=O+Despertar",
         "opcoes": [
             {"label": "Levantar a cabeça e olhar ao redor...", "destino": "cap1_parte2"} 
         ]
     },
     "cap1_parte2": {
-        "texto": "Você não está sozinho. Do outro lado do corredor, uma mulher chora silenciosamente. Mais à frente, um policial mantém a cabeça baixa, com uma mancha escura de sangue na camisa.\n\nNo fundo do vagão, um homem de sobretudo olha diretamente para você. Sem piscar. E perto da porta, uma senhora muito velha segura uma bolsa contra o peito.",
-        "imagem": "passageiros.png",
+        "texto": "Você força o corpo a levantar e olha o corredor do vagão. Você não está sozinho.\n\nDo outro lado, uma mulher chora silenciosamente, escondendo o rosto nas mãos. Mais à frente, um policial mantém a cabeça baixa, fixo no chão, com uma mancha escura de sangue secando na camisa.\n\nNo fundo do vagão, um homem de sobretudo escuro olha diretamente para você. Sem piscar. Perto dele, um **menino pequeno**, de uns nove anos, dorme encolhido no banco, abraçado a uma mochila.\n\nE bem perto de você, na poltrona da frente, uma senhora muito velha segura uma bolsa de mão contra o peito, observando tudo com olhos alertas.",
+        "imagem": "https://placehold.co/800x400/222222/FFFFFF?text=Os+Passageiros",
         "opcoes": [
             {"label": "Continuar observando...", "destino": "cap1_parte3"}
         ]
     },
     "cap1_parte3": {
-        "texto": "Um alto-falante chia. Uma voz distorcida anuncia:\n— Próxima estação... Santa Lúcia.\n\nO trem começa a desacelerar. Pela janela escura, você vê uma plataforma vazia. A velha senhora abre os olhos e olha diretamente para você.\n\n— Escute com atenção. Não importa o que você ouvir... quando o trem parar, não olhe pela janela.\n\nMas já é tarde. Há alguém na plataforma. De costas. Usando a mesma roupa que você.",
-        "imagem": "estacao.png",
+        "texto": "Um alto-falante chia, quebrando o silêncio opressor do vagão. Uma voz distorcida e mecânica anuncia:\n— Próxima estação... Santa Lúcia.\n\nO trem começa a desacelerar, o ranger dos freios é ensurdecedor. Pela janela escura, onde antes só havia rastros de velocidade, você vê uma plataforma vazia e mal iluminada se aproximar.\n\nA velha senhora na sua frente quebra o próprio protocolo e se vira para você. Seus olhos transmitem um terror genuíno.\n\n— Escute com atenção, rapaz — ela sussurra apressada. — Meu nome é Teresa. Não importa o que você ouvir... quando o trem parar, **não olhe** pela janela.\n\nMas é tarde. O trem para. Instintivamente, você olha. Há alguém na plataforma. Alguém em pé, de costas, sob a luz amarelada do poste. Usando exatamente a mesma roupa que você veste agora.",
+        "imagem": "https://placehold.co/800x400/050505/FFFFFF?text=A+Estacao+Santa+Lucia",
         "opcoes": [
-            {"label": "A) Continuar olhando pela janela para ver o rosto.", "destino": "cena_janela", "ganha_memoria": "olhou_janela"},
-            {"label": "B) Afastar-se imediatamente e exigir respostas da velha.", "destino": "cena_velha", "ganha_memoria": "obedeceu_velha"},
-            {"label": "C) Ir até a criança adormecida.", "destino": "cena_crianca", "ganha_memoria": "falou_crianca"},
+            {"label": "A) Continuar olhando pela janela para ver o rosto da figura.", "destino": "cena_janela", "ganha_memoria": "olhou_janela"},
+            {"label": "B) Afastar-se imediatamente e exigir respostas de Teresa.", "destino": "cena_velha", "ganha_memoria": "obedeceu_velha"},
+            {"label": "C) Ir até o menino adormecido no fundo do vagão.", "destino": "cena_crianca", "ganha_memoria": "falou_crianca"},
             {"label": "D) Ignorar todos e correr para o próximo vagão.", "destino": "cena_fuga", "ganha_memoria": "fugiu_vagao"}
         ]
     },
@@ -53,34 +53,29 @@ historia = {
     # LINHA A (JANELA/FUTURO)
     # ===============================
     "cena_janela": {
-        "texto": "Você ignora a velha.\n\nA pessoa na plataforma começa a virar o rosto. Devagar. Primeiro o ombro. Depois o pescoço. Então o rosto aparece sob a luz amarelada de um dos postes.\n\nSeu corpo inteiro esfria. É você. Mas muito mais velho. O rosto marcado, um corte profundo atravessando a sobrancelha esquerda. A roupa coberta por manchas que parecem sangue seco.\n\nEle caminha acompanhando o trem. Vocês alinham as mãos no vidro. Imagens invadem sua mente: Fogo. Uma mulher caída. A criança. O policial atirando. A velha gritando. E você... ajoelhado diante de dezenas de corpos.",
-        "imagem": "futuro.png",
+        "texto": "Você ignora o aviso de Teresa e cola o rosto no vidro frio.\n\nA pessoa na plataforma começa a virar o rosto. Devagar. Primeiro o ombro. Depois o pescoço. O medo trava sua respiração quando o rosto aparece sob a luz.\n\nÉ você. Mas não como você é agora. É uma versão muito mais velha, com o rosto marcado pelo tempo e por cicatrizes, um corte profundo atravessando a sobrancelha esquerda. A roupa está suja, coberta por manchas que parecem sangue seco.\n\nO seu 'eu' velho caminha pela plataforma, acompanhando o vagão parado. Ele para diante da sua janela e vocês alinham as mãos no vidro. Nesse toque impossível, imagens violentas invadem sua mente como flashes: Fogo. Um grito de mulher. O choro de uma criança. E você... ajoelhado diante de destroços.\n\nO pânico faz você recuar.",
+        "imagem": "https://placehold.co/800x400/111111/FFFFFF?text=O+Seu+Futuro",
         "opcoes": [
-            {"label": "Tentar ouvir o que ele diz...", "destino": "cena_janela_mulher"}
+            {"label": "Recuperar o fôlego...", "destino": "cena_janela_vibracao"}
         ]
     },
-    "cena_janela_mulher": {
-        "texto": "Seu outro eu aproxima o rosto do vidro. Você lê seus lábios:\n\n**NÃO DESÇA.**\n\nO trem para na Estação Santa Lúcia. A mulher que chorava se levanta, desesperada, e corre para a plataforma ignorando os avisos do policial.\n\nEla ri de alívio por estar fora. Até que outra mulher, idêntica a ela, aparece na escuridão. A cópia sussurra algo no ouvido da passageira original, que imediatamente para de lutar e sorri de forma macabra para você.\n\nAs portas se fecham. A mulher fica para trás, junto com a sua cópia.",
-        "imagem": "https://placehold.co/800x400/220000/FFFFFF?text=A+Copia+Na+Plataforma",
-        "opcoes": [
-            {"label": "Olhar o celular vibrando no seu bolso...", "destino": "cena_janela_celular"}
-        ]
-    },
-    "cena_janela_celular": {
-        "texto": "O celular continua vibrando em sua mão.\n\n*NÃO CONFIE NA VELHA.*\n*NÃO DEIXE A CRIANÇA CHEGAR À ESTAÇÃO FINAL.*\n\nA contagem regressiva continua.\n02:31...\n02:30...\n\nTeresa se aproxima.\n— O que apareceu nesse telefone?\n\nMiguel observa você do outro lado do vagão. O homem de sobretudo não sorri mais. Pela janela, Santa Lúcia desaparece lentamente na escuridão. Então chega uma nova mensagem.\n\n*NÃO MOSTRE ISSO A ELA.*\n*ELA JÁ ME ENTREGOU UMA VEZ.*",
+    "cena_janela_vibracao": {
+        "texto": "Enquanto você tenta processar a visão, algo começa a vibrar violentamente no bolso da sua calça. É o seu celular.\n\nA tela acende. Não há número de chamada, apenas um texto grande e vermelho pairando sobre o fundo preto:\n\n**02:31... 02:30...**\n\nÉ uma contagem regressiva. Começou agora. E está correndo rápido.\n\nTeresa, a velha senhora, se aproxima de você, o rosto pálido. Ela viu o aparelho.\n— O que apareceu nesse telefone? — ela exige, sua voz tremendo.\n\nDo outro lado do vagão, o homem de sobretudo e o policial observam você. Até o **menino adormecido** acordou e olha em sua direção com olhos vazios. Pela janela, a plataforma de Santa Lúcia desaparece lentamente enquanto o trem volta a andar.\n\nUma nova mensagem pisca na tela do celular, sobrepondo a contagem:\n*NÃO MOSTRE ISSO A TERESA.*",
         "imagem": "https://placehold.co/800x400/001100/FFFFFF?text=As+Mensagens",
         "opcoes": [
-            {"label": "Olhar para o reflexo na tela...", "destino": "cena_a_decisao"}
+            {"label": "Olhar para o reflexo na tela apagada...", "destino": "cena_a_decisao"}
         ]
     },
     "cena_a_decisao": {
-        "texto": "Você sente o estômago revirar. Teresa estende a mão.\n— Me dê o telefone.\n\nAntes que você responda, surge a última mensagem:\n**VOCÊ PRECISA ESCOLHER EM QUEM ACREDITAR ANTES QUE ELE ENTRE.**\n\n01:59...\n01:58...\n\nVocê olha para Teresa. Depois para Miguel. E percebe uma coisa perturbadora. A tela apagada do celular reflete seu rosto. Mas por uma fração de segundo... o reflexo parece muito mais velho.",
+        "texto": "Você sente o estômago revirar. Teresa estende a mão enrugada para você.\n— Me dê o telefone, agora!\n\nAntes que você responda, surge a última mensagem no visor, como um aviso final:\n**VOCÊ PRECISA ESCOLHER EM QUEM ACREDITAR ANTES QUE O CONDUTOR ENTRE.**\n\nO cronômetro marca **01:58**.\n\nVocê olha para Teresa. Depois para os outros passageiros estranhos. Miguel, o menino no fundo, parece estar chorando sem fazer som. Você percebe uma coisa perturbadora: a tela do celular reflete seu rosto. Mas por uma fração de segundo... o reflexo não é o seu, mas o daquele homem velho na plataforma.",
         "imagem": "https://placehold.co/800x400/110000/FFFFFF?text=O+Reflexo",
         "opcoes": [
-            {"label": "A1) Esconder o celular e confiar nas mensagens", "destino": "cena_a1_mensagens", "ganha_memoria": "confiou_futuro"},
+            {"label": "A1) Esconder o celular e confiar nas mensagens misteriosas", "destino": "cena_a1_mensagens", "ganha_memoria": "confiou_futuro"},
             {"label": "A2) Entregar o celular e confiar em Teresa", "destino": "cena_a2_teresa", "ganha_memoria": "entregou_celular"}
         ]
     },
+
+    
     "cena_a1_mensagens": {
         "texto": "Você apaga a tela e esconde o celular. Teresa abaixa a mão, desconfiada, mas se afasta.\n\nO aparelho vibra novamente. Você checa disfarçadamente.\n**CERTO. ELA NÃO PODE SABER QUE ESTAMOS FALANDO.**\n\nVocê digita: *Quem é você?*\n**VOCÊ.**\n*Prova.*\n**VOCÊ TEM UMA CICATRIZ DEBAIXO DO JOELHO DIREITO. AOS 11 ANOS VOCÊ CAIU DO MURO DOS FUNDOS.**\n\nVocê toca a perna instintivamente. É verdade. É a primeira lembrança clara da sua infância. *Como sabe disso?*\n**PORQUE EU ESTAVA LÁ.**",
         "imagem": "https://placehold.co/800x400/001122/FFFFFF?text=A+Cicatriz",
