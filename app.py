@@ -61,7 +61,7 @@ historia = {
     },
     "cena_janela_vibracao": {
         "texto": "Enquanto você tenta processar a visão, algo começa a vibrar violentamente no bolso da sua calça. É o seu celular.\n\nA tela acende. Não há número de chamada, apenas um texto grande e vermelho pairando sobre o fundo preto:\n\n**02:31... 02:30...**\n\nÉ uma contagem regressiva. Começou agora. E está correndo rápido.\n\nTeresa, a velha senhora, se aproxima de você, o rosto pálido. Ela viu o aparelho.\n— O que apareceu nesse telefone? — ela exige, sua voz tremendo.\n\nDo outro lado do vagão, o homem de sobretudo e o policial observam você. Até o **menino adormecido** acordou e olha em sua direção com olhos vazios. Pela janela, a plataforma de Santa Lúcia desaparece lentamente enquanto o trem volta a andar.\n\nUma nova mensagem pisca na tela do celular, sobrepondo a contagem:\n*NÃO MOSTRE ISSO A TERESA.*",
-        "imagem": "mensagens.png",
+        "imagem": "msgs.png",
         "opcoes": [
             {"label": "Olhar para o reflexo na tela apagada...", "destino": "cena_a_decisao"}
         ]
