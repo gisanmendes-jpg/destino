@@ -66,13 +66,19 @@ historia = {
     },
     
     "cena_janela_celular": {
-        "texto": "Sem sinal. Mas as mensagens chegam. Remetente: **VOCÊ**.\n\n*EU AVISEI PARA NÃO OLHAR.*\n*AGORA ELE SABE ONDE VOCÊ ESTÁ.*\n*NÃO CONFIE NA VELHA.*\n*E NÃO DEIXE A CRIANÇA CHEGAR À ESTAÇÃO FINAL.*\n\nA velha pede para ver o seu telefone. A criança diz para não entregar. O policial questiona sobre o aparelho e o homem de sobretudo apenas ri.\n\nUma última mensagem pisca na tela, seguida por uma contagem que se move em tempo real:\n**VOCÊ TEM 3 MINUTOS PARA DECIDIR EM QUEM ACREDITAR.**\n\n02:59... 02:58... 02:57...",
-        "imagem": "https://placehold.co/800x400/002200/FFFFFF?text=02:59",
+        "texto": "O celular continua vibrando em sua mão.\n\n*NÃO CONFIE NA VELHA.*\n*NÃO DEIXE A CRIANÇA CHEGAR À ESTAÇÃO FINAL.*\n\nA contagem regressiva continua.\n02:31...\n02:30...\n\nTeresa se aproxima.\n— O que apareceu nesse telefone?\n\nMiguel observa você do outro lado do vagão. O homem de sobretudo não sorri mais. Pela janela, Santa Lúcia desaparece lentamente na escuridão. Então chega uma nova mensagem.\n\n*NÃO MOSTRE ISSO A ELA.*\n*ELA JÁ ME ENTREGOU UMA VEZ.*",
+        "imagem": "https://placehold.co/800x400/001100/FFFFFF?text=As+Mensagens",
         "opcoes": [
-            {"label": "A1) Mostrar as mensagens para a velha", "destino": "cena_a1", "ganha_memoria": "confiou_velha"},
-            {"label": "A2) Esconder o celular e confiar nas mensagens", "destino": "cena_a2", "ganha_memoria": "confiou_mensagens"},
-            {"label": "A3) Interrogar a criança", "destino": "cena_a3", "ganha_memoria": "interrogou_crianca"},
-            {"label": "A4) Confrontar o homem de sobretudo", "destino": "cena_a4", "ganha_memoria": "enfrentou_sobretudo"}
+            {"label": "Olhar para o reflexo na tela...", "destino": "cena_a_decisao"}
+        ]
+    },
+
+    "cena_a_decisao": {
+        "texto": "Você sente o estômago revirar. Teresa estende a mão.\n— Me dê o telefone.\n\nAntes que você responda, surge a última mensagem:\n**VOCÊ PRECISA ESCOLHER EM QUEM ACREDITAR ANTES QUE ELE ENTRE.**\n\n01:59...\n01:58...\n\nVocê olha para Teresa. Depois para Miguel. E percebe uma coisa perturbadora. A tela apagada do celular reflete seu rosto. Mas por uma fração de segundo... o reflexo parece muito mais velho.",
+        "imagem": "https://placehold.co/800x400/110000/FFFFFF?text=O+Reflexo",
+        "opcoes": [
+            {"label": "A1) Esconder o celular e confiar nas mensagens", "destino": "cena_a1_mensagens", "ganha_memoria": "confiou_futuro"},
+            {"label": "A2) Entregar o celular e confiar em Teresa", "destino": "cena_a2_teresa", "ganha_memoria": "entregou_celular"}
         ]
     },
     
