@@ -834,7 +834,43 @@ historia = {
             {"label": "🎬 Explorar outra linha do tempo (Jogar Novamente)", "destino": "cap1_parte1", "reiniciar": True}
         ]
     },
-    
+    # === ROTA D1: O ARQUIVO DO HOMEM QUE NÃO EXISTE ===
+    "cena_d1_investigar": {
+        "texto": "Você senta à mesa e começa a folhear a pasta do Arquivo. Relatórios de 1997, 2004, 2013... em todas as fotografias, você aparece com a mesma idade. O documento revela a verdade aterradora: **você foi devolvido 12 vezes**. Na duodécima, houve uma falha de integração. Você não é o original; você é uma reconstrução feita com material residual do Arquivo.\n\nA criatura que estava nas suas costas se vira e revela ter a cicatriz do original. Ela diz: *'Depois de tantas devoluções, ninguém mais sabe qual versão foi a primeira.'*",
+        "imagem": "https://placehold.co/800x400/110000/FFFFFF?text=O+Substituto+Devolvido",
+        "opcoes": [
+            {"label": "Ler a carta deixada no envelope...", "destino": "cap2_d1_carta"}
+        ]
+    },
+
+    "cap2_d1_carta": {
+        "texto": "No fundo da pasta, você encontra um envelope escrito à mão por uma versão sua anterior: *'Não procure descobrir qual de nós é o original. Essa pergunta é a armadilha. O trem precisa que exista um verdadeiro e uma cópia para nos manter trazendo de volta. Não salve a identidade. Salve a decisão.'*\n\nA parede do Arquivo se abre, revelando dois caminhos:\n1. **A Cadeira de Devolução**: para retornar aos vivos e reconstruir a identidade usando partes do Passageiro 007.\n2. **A Porta Branca de Encerramento**: para apagar todas as instâncias do paradoxo de uma vez por todas.",
+        "imagem": "https://placehold.co/800x400/330000/FFFFFF?text=Paradoxo+Consciente",
+        "opcoes": [
+            # AS DUAS OPÇÕES FINAIS DA ROTA D1
+            {"label": "D1.1) Aceitar outra devolução (Reconstruir a identidade e continuar o ciclo)", "destino": "final_d1_devolucao", "reiniciar": True},
+            {"label": "D1.2) Encerrar o paradoxo (Apagar todas as versões e restaurar a linha original)", "destino": "final_d1_encerramento", "reiniciar": True}
+        ]
+    },
+
+    # ==========================================
+    # FINAIS DA ROTA D1
+    # ==========================================
+    "final_d1_devolucao": {
+        "texto": "Você senta na cadeira de devolução. O Arquivo reconstrói o que restou de você usando as lembranças disponíveis e partes do Passageiro 007. Você retorna ao mundo dos vivos com um nome e uma história, mas sem nunca saber quem realmente foi.\n\nO trem continua rodando nos trilhos invisíveis, e o ciclo se recompõe para mais uma viagem.\n\n**FINAL: O CICLO COMPLETO**\n*Um nome é apenas uma máscara que usamos para esconder o vazio.*",
+        "imagem": "https://placehold.co/800x400/000000/FFFFFF?text=O+Ciclo+Completo",
+        "opcoes": [
+            {"label": "🎬 Explorar outra linha do tempo (Jogar Novamente)", "destino": "cap1_parte1", "reiniciar": True}
+        ]
+    },
+
+    "final_d1_encerramento": {
+        "texto": "Você recusa a reconstrução e abre a porta branca. Ao acionar o encerramento, todas as versões criadas pelas devoluções — inclusive você e o Passageiro 007 — são apagadas.\n\nA realidade retorna ao instante anterior à primeira alteração: Miguel sobrevive ao acidente, o homem original morre às 00:17, e o paradoxo deixa de existir. Ninguém jamais saberá quem tomou a decisão, mas a escolha finalmente foi salva.\n\n**FINAL: FIM DO PARADOXO**\n*A identidade não importa quando a decisão certa finalmente liberta o futuro.*",
+        "imagem": "https://placehold.co/800x400/220033/FFFFFF?text=Fim+Do+Paradoxo",
+        "opcoes": [
+            {"label": "🎬 Explorar outra linha do tempo (Jogar Novamente)", "destino": "cap1_parte1", "reiniciar": True}
+        ]
+    },
 
     
     
