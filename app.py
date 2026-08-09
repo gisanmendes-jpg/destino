@@ -550,7 +550,7 @@ historia = {
     },
 # === ROTA B1: OBEDECER E EXIGIR RESPOSTAS ===
     # === ROTA B1: AS REGRAS DOS MORTOS ===
-    # === ROTA B1: AS REGRAS DOS MORTOS ===
+   
     "cena_b1_obedecer": {
         "texto": "Você recua. Não olha novamente para a figura sentada no seu antigo lugar. Teresa segura seu braço: *'Isso. Não reconheça.'*\n\n— *Eu obedeci. Agora você vai falar.* — você diz. Desde que acordou, ela só impõe proibições. Teresa hesita, mas acaba cedendo e enumerando as regras que protegem os passageiros.\n\n— *Primeira: se alguém do lado de fora souber seu nome, não olhe, porque chama aquilo que você ainda acredita ser. Segunda: nunca desembarque onde alguém o espera, porque morto nenhum deveria estar esperando outro morto...*",
         "imagem": "https://placehold.co/800x400/112233/FFFFFF?text=As+Regras+Dos+Mortos",
@@ -753,8 +753,9 @@ historia = {
         ]
     },
     # === ROTA C1: A NOITE DO ACIDENTE E A FARTA VEM DE HELENA ===
+    
     # === TELA DE ESCOLHA ENTRE C1 E C2 ===
-    # === TELA DE ESCOLHA ENTRE C1 E C2 ===
+    
     "cena_escolha_c": {
         "texto": "Sob a luz, você reconhece Helena. Ela sorri: *'Você finalmente lembrou de mim. Está com medo?'*\n\nDaniel faz a pergunta que gela seu sangue: *'A pergunta é: quem morreu naquela estrada?'*\n\nHelena começa a rir baixo, um som que não combina com ela. Miguel hesita. Então você percebe algo impossível: Helena está descalça sobre o chão molhado, mas **não produz reflexo nas poças**.\n\nTeresa sussurra: *'Agora escolha.'*",
         "imagem": "https://placehold.co/800x400/220000/FFFFFF?text=O+Reflexo+Ausente",
