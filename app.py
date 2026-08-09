@@ -33,7 +33,7 @@ historia = {
     },
     "cap1_parte2": {
         "texto": "Você não está sozinho. Do outro lado do corredor, uma mulher chora silenciosamente. Mais à frente, um policial mantém a cabeça baixa, com uma mancha escura de sangue na camisa.\n\nNo fundo do vagão, um homem de sobretudo olha diretamente para você. Sem piscar. E perto da porta, uma senhora muito velha segura uma bolsa contra o peito.",
-        "imagem": "https://placehold.co/800x400/222222/FFFFFF?text=Os+Passageiros",
+        "imagem": "passageiros.png",
         "opcoes": [
             {"label": "Continuar observando...", "destino": "cap1_parte3"}
         ]
