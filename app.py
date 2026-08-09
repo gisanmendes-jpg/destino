@@ -54,7 +54,7 @@ historia = {
     # ===============================
     "cena_janela": {
         "texto": "Você ignora a velha.\n\nA pessoa na plataforma começa a virar o rosto. Devagar. Primeiro o ombro. Depois o pescoço. Então o rosto aparece sob a luz amarelada de um dos postes.\n\nSeu corpo inteiro esfria. É você. Mas muito mais velho. O rosto marcado, um corte profundo atravessando a sobrancelha esquerda. A roupa coberta por manchas que parecem sangue seco.\n\nEle caminha acompanhando o trem. Vocês alinham as mãos no vidro. Imagens invadem sua mente: Fogo. Uma mulher caída. A criança. O policial atirando. A velha gritando. E você... ajoelhado diante de dezenas de corpos.",
-        "imagem": "https://placehold.co/800x400/111111/FFFFFF?text=O+Seu+Futuro",
+        "imagem": "futuro,png",
         "opcoes": [
             {"label": "Tentar ouvir o que ele diz...", "destino": "cena_janela_mulher"}
         ]
