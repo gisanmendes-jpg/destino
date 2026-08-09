@@ -313,6 +313,31 @@ historia = {
             {"label": "A1.2) Destruir o celular e romper o contato", "destino": "cena_a1_2", "ganha_memoria": "destruiu_celular"}
         ]
     },
+    # === FINAIS DA LINHA A1 ===
+    "cena_a1_1": {
+        "texto": "Você dá um passo na direção do seu eu mais velho.\n\nSe ele realmente enviou as mensagens, finalmente poderá explicar o que aconteceu nas viagens anteriores e por que Miguel não pode chegar ao terminal.\n\nMas as palavras do alto-falante ecoam na sua cabeça. O Condutor acabou de agradecer por ele estar ali. Talvez você não o tenha encontrado. Talvez tenha acabado de trazê-lo para dentro.",
+        "imagem": "https://placehold.co/800x400/221100/FFFFFF?text=A+Isca",
+        "opcoes": [
+            {"label": "Encarar o seu destino...", "destino": "cap2_a1_decisao_final"} 
+        ]
+    },
+
+    "cena_a1_2": {
+        "texto": "Você recua. Decide destruir o celular e impedir que novas mensagens conduzam suas decisões.\n\nVocê escolhe confiar no único aviso que Teresa e o 'eu do futuro' deram em comum: alguma coisa está tentando assumir sua identidade.\n\nMas, antes de desligar e quebrar o aparelho, a tela acende com uma última mensagem:\n\n**SE VOCÊ PARAR DE ME OUVIR, EU VOU MORRER DE NOVO.**\n\nO futuro encontrou o presente.",
+        "imagem": "https://placehold.co/800x400/000000/FFFFFF?text=O+Fim+Do+Contato",
+        "opcoes": [
+            {"label": "Encarar o seu destino...", "destino": "cap2_a1_decisao_final"} 
+        ]
+    },
+
+    "cap2_a1_decisao_final": {
+        "texto": "Independentemente de quem mandou as mensagens, o ciclo se fechou. O trem chega ao seu limite.\n\nAs portas se abrem para a noite chuvosa do acidente. O carro destruído. Sirenes ao longe. O seu 'eu mais velho' aponta para Miguel, depois para você. A mesma escolha de todas as outras viagens se apresenta.\n\nVocê vai desfazer o acordo e morrer na estrada, ou vai aceitar continuar vivo e se transformar no próximo Condutor?",
+        "imagem": "https://placehold.co/800x400/330000/FFFFFF?text=O+Terminal",
+        "opcoes": [
+            {"label": "A) LEVAR MIGUEL ATÉ O TERMINAL (Aceitar a morte)", "destino": "final_sacrificio", "reiniciar": True},
+            {"label": "B) PEGAR A MÃO DO SEU EU MAIS VELHO (Aceitar a vida)", "destino": "final_egoista", "reiniciar": True}
+        ]
+    },
     "cap2_teresa_explica": {
         "texto": "No instante em que Teresa toca o celular, a tela fica preta.\n\n— *Ele sabe que eu toquei*, ela diz. O aparelho vibra na mão dela e acende.\n\n**OLÁ, TERESA.**\n**AINDA ESTÁ TENTANDO CONSERTAR 1964?**\n\nO rosto da velha perde a cor. Você pega o telefone de volta: — *Quem morreu em 1964?*\nTeresa implora para você não usar a palavra *'morreu'*. As luzes piscam duas vezes.\n\nOutra mensagem chega para você: **ELA NÃO CONTA PORQUE TEM VERGONHA.**",
         "imagem": "https://placehold.co/800x400/111111/FFFFFF?text=O+Segredo+De+1964",
