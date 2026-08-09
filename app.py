@@ -644,7 +644,59 @@ historia = {
             {"label": "🎬 Explorar outra linha do tempo (Jogar Novamente)", "destino": "cap1_parte1", "reiniciar": True}
         ]
     },
+    # === ROTA B1.2: A ORIGEM DAS REGRAS E O CONDUTOR ===
+    "cena_b1_2_recusa": {
+        "texto": "Você se recusa a aceitar as regras cegamente e exige saber quem as criou. Teresa tenta impedi-lo, mas a cópia zomba: *'Essa é uma pergunta muito melhor.'*\n\nSob pressão, Teresa confessa que foi ela quem escreveu as regras após fazer um pacto em 1964 para salvar sua filha que estava morrendo. Mas ao ser questionada sobre quem as ditou, ela aponta para o teto e sussurra: *'O Condutor.'*",
+        "imagem": "https://placehold.co/800x400/221122/FFFFFF?text=Quem+Escreveu+As+Regras",
+        "opcoes": [
+            {"label": "Abrir a porta da Cabine do Condutor...", "destino": "cap2_b1_2_cabine"}
+        ]
+    },
 
+    "cap2_b1_2_cabine": {
+        "texto": "Uma porta de metal negro sem janela surge na frente do vagão com os dizeres: **CABINE DO CONDUTOR**. A fechadura gira sozinha.\n\nVocê entra e encontra apenas uma cadeira e um livro de couro antigo: **REGULAMENTO DE PASSAGEIROS**. Ao abrir, você descobre que todas as regras foram assinadas pela mesma pessoa. Ao comparar com o documento na sua carteira, você percebe, horrorizado, que **a assinatura é a sua**.",
+        "imagem": "https://placehold.co/800x400/110000/FFFFFF?text=A+Assinatura",
+        "opcoes": [
+            {"label": "Encarar o seu eu mais velho...", "destino": "cap2_b1_2_velho"}
+        ]
+    },
+
+    "cap2_b1_2_velho": {
+        "texto": "A cadeira não está mais vazia. Uma versão sua muito mais velha, com a cicatriz e o uniforme de ferroviário, está sentada nela. *'Você estava sentado onde está agora'*, ele diz.\n\nEle mostra a janela da cabine. Fora dali, existem milhares de trens. Alguns sem Condutor, onde os passageiros lembram que morreram, entram em colapso e se fundem em massas disformes — as origines reais do Passageiro 007.\n\nO velho explica: *'As regras impedem que os mortos percam a identidade, mas também os impedem de partir. Sem passageiros não há trem, e sem trem não existe Condutor. O Condutor não é uma pessoa... é a parte de cada morto que diz: Ainda não.'*",
+        "imagem": "https://placehold.co/800x400/331111/FFFFFF?text=O+Velho+Condutor",
+        "opcoes": [
+            {"label": "Ouvir o desaparecimento e a escolha...", "destino": "cap2_b1_2_decisao"}
+        ]
+    },
+
+    "cap2_b1_2_decisao": {
+        "texto": "O velho desaparece, deixando apenas o uniforme e o boné na cadeira. O painel cancela a Restauração e exibe o **PROTOCOLO DE SUBSTITUIÇÃO**.\n\nVocê tem duas opções definitivas: **Manter o Sistema** (assumindo o cargo de Condutor para manter os mortos anestesiados e contidos pelas regras) ou **Encerrar o Sistema** (rasgar o Regulamento e fazer todos os passageiros lembrarem de sua morte de uma vez por todas, colapsando o trem).\n\nAté o Passageiro 007 parece aterrorizado com a segunda opção.",
+        "imagem": "https://placehold.co/800x400/550000/FFFFFF?text=Protocolo+De+Substituicao",
+        "opcoes": [
+            # AS DUAS OPÇÕES FINAIS DA ROTA B1.2
+            {"label": "B1.2-A) Assumir o lugar do Condutor (Manter as regras e o trem funcionando)", "destino": "final_b1_2_condutor", "reiniciar": True},
+            {"label": "B1.2-B) Destruir as regras (Rasgar o regulamento e acordar todos os mortos)", "destino": "final_b1_2_destruir", "reiniciar": True}
+        ]
+    },
+
+    # ==========================================
+    # FINAIS DA ROTA B1.2
+    # ==========================================
+    "final_b1_2_condutor": {
+        "texto": "Você veste o uniforme e senta na cadeira de comando. Aceita que as regras, por mais cruéis que sejam, evitam o colapso dos mortos.\n\nOs passageiros continuarão esquecendo. O 007 continuará contido. Mas você ficará sozinho na cabine, eternamente consciente, sabendo que todos ali estão mortos, vigiando o eterno vai e vem entre estações.\n\n**FINAL: O NOVO CONDUTOR**\n*Você se tornou o 'Ainda não' de todos os outros.*",
+        "imagem": "https://placehold.co/800x400/050505/FFFFFF?text=O+Novo+Condutor",
+        "opcoes": [
+            {"label": "🎬 Explorar outra linha do tempo (Jogar Novamente)", "destino": "cap1_parte1", "reiniciar": True}
+        ]
+    },
+
+    "final_b1_2_destruir": {
+        "texto": "Você recusa o cargo e rasga o Regulamento de Passageiros. Contenção falha. A Restauração cessa e todos os passageiros nos milhares de trens ao redor recuperam as memórias simultaneamente.\n\nAs amarras se quebram. O 007 desmancha-se em gritos e o trem deixa de existir como uma prisão. Milhares de vozes cruzam o véu dizendo: *'Eu lembro. Eu morri.'*\n\nAs regras acabaram. O medo foi encarado. E, pela primeira vez, os passageiros finalmente puderam partir.\n\n**FINAL: O FIM DA LINHA**\n*A negação terminou. A viagem chegou ao fim.*",
+        "imagem": "https://placehold.co/800x400/220033/FFFFFF?text=O+Fim+Da+Linha",
+        "opcoes": [
+            {"label": "🎬 Explorar outra linha do tempo (Jogar Novamente)", "destino": "cap1_parte1", "reiniciar": True}
+        ]
+    },
     
     
     
