@@ -354,6 +354,48 @@ historia = {
             {"label": "A2.2) Usar Teresa como isca para revelar o Condutor", "destino": "cena_a2_2_isca", "ganha_memoria": "usou_isca"}
         ]
     },
+    "cena_a2_1_proteger": {
+        "texto": "Você puxa Teresa de volta. *'NÃO.'*\nEla tenta se soltar, furiosa e aos prantos. *'É minha filha! Ela estava morrendo. Os médicos disseram que não passaria daquela noite.'*\n\nVocê começa a entender. *'E o trem apareceu. Às 00:17.'*\n\nTeresa confessa que ouviu a voz do Condutor oferecendo salvá-la em troca de uma vida. *'Qualquer uma.'*\nVocê recua, horrorizado: *'Você entregou alguém?'*\n*'Eu não sabia! Eu queria minha filha viva!'*\n\nO grito dela ecoa. E, lá fora, a menina começa a rir. Uma risada profunda e distorcida.",
+        "imagem": "https://placehold.co/800x400/111122/FFFFFF?text=O+Acordo+de+Teresa",
+        "opcoes": [
+            {"label": "Olhar para a coisa na plataforma...", "destino": "cap2_a2_1_monstro"}
+        ]
+    },
+
+    "cap2_a2_1_monstro": {
+        "texto": "O rosto da menina começa lentamente a se deformar. Os olhos escurecem. A boca fica larga demais.\n\nA criatura na plataforma fala com a voz da menina: *'Você me deu um nome.'*\nDepois com voz masculina: *'E uma vida.'*\nDepois... com a **sua** voz: *'Foi assim que começou.'*\n\nTeresa parece compreender. Ela olha para você: *'Você também fez um acordo. Na primeira viagem. Você pediu para esquecer.'*\n\nO celular vibra no seu bolso: **NÃO ESCUTE.**\nVocê olha para Miguel, chorando no corredor. E Teresa continua: *'Na estrada...'*",
+        "imagem": "https://placehold.co/800x400/000000/FFFFFF?text=A+Criatura",
+        "opcoes": [
+            {"label": "Lembrar do acidente...", "destino": "cap2_a2_1_lembranca"}
+        ]
+    },
+
+    "cap2_a2_1_lembranca": {
+        "texto": "Uma imagem explode na sua cabeça: Chuva. Faróis. Miguel gritando. O carro rodando. Silêncio. Escuridão.\n\nVocê está preso às ferragens. Miguel imóvel ao seu lado. Uma sombra no banco traseiro pergunta: *'Você quer viver?'*\nVocê grita para salvar Miguel. A voz responde: *'Não foi isso que perguntei.'*\n\nVocê fecha os olhos, mas a lembrança continua: *'Você quer viver?'*\nE a sua própria voz responde: *'Sim.'*\n\nVocê abre os olhos no trem. Miguel olha para você: *'Pai...'* \n\nTeresa chora: *'Ele deveria ter sobrevivido. Você não o sacrificou conscientemente, mas aceitou. E ele ficou preso entre os dois destinos.'*",
+        "imagem": "https://placehold.co/800x400/440000/FFFFFF?text=A+Escolha",
+        "opcoes": [
+            {"label": "Ouvir o alto-falante...", "destino": "cap2_a2_1_condutor"}
+        ]
+    },
+
+    "cap2_a2_1_condutor": {
+        "texto": "O alto-falante chia: **Próxima estação... Terminal.**\nO celular vibra freneticamente: **NÃO DEIXE ELE CHEGAR LÁ. EU SOU VOCÊ. SE ELE ATRAVESSAR, NÓS ACABAMOS.**\n\nVocê finalmente entende: o seu 'eu do futuro' não queria salvar Miguel, queria **se salvar**.\n\nUma figura sem rosto usando uniforme ferroviário aparece no fundo do vagão. A cada passo, o rosto muda, até parar no seu. Muito mais velho. O Condutor sorri com seu rosto: *'Chegamos.'*\n\nAs portas se abrem para a noite chuvosa do acidente. O carro destruído. Sirenes ao longe. O Condutor aponta para Miguel: *'Ele atravessa... e você permanece.'*",
+        "imagem": "https://placehold.co/800x400/221111/FFFFFF?text=O+Terminal",
+        "opcoes": [
+            {"label": "Encarar o Condutor...", "destino": "cap2_a2_1_decisao"}
+        ]
+    },
+
+    "cap2_a2_1_decisao": {
+        "texto": "Miguel segura sua mão: *'Eu não quero ir sem você.'*\nVocê se ajoelha: *'Talvez você precise.'*\n\nO Condutor estende a mão: *'Ou podemos fazer como antes.'* Atrás dele, dezenas de versões suas, de todas as viagens anteriores. Todas escolheram viver.\n\nTeresa sussurra: *'É assim que ele escolhe o próximo Condutor. Cada vez que você prefere sua vida à dele... fica menos humano.'*\n\nVocê entende. O homem velho não é o seu futuro. É o seu **destino** se continuar escolhendo o egoísmo.\n\nO relógio marca: **00:17**.\nPela primeira vez... os segundos começam a correr.",
+        "imagem": "https://placehold.co/800x400/550000/FFFFFF?text=A+Decisao+Final",
+        "opcoes": [
+            {"label": "A) LEVAR MIGUEL ATÉ O TERMINAL (Desfazer o acordo e aceitar sua morte)", "destino": "final_sacrificio", "reiniciar": True},
+            {"label": "B) ACEITAR O ACORDO NOVAMENTE (Impedir Miguel de atravessar e viver)", "destino": "final_egoista", "reiniciar": True}
+        ]
+    },
+
+    
     
 }
 
