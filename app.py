@@ -754,6 +754,7 @@ historia = {
     },
     # === ROTA C1: A NOITE DO ACIDENTE E A FARTA VEM DE HELENA ===
     # === TELA DE ESCOLHA ENTRE C1 E C2 ===
+    # === TELA DE ESCOLHA ENTRE C1 E C2 ===
     "cena_escolha_c": {
         "texto": "Sob a luz, você reconhece Helena. Ela sorri: *'Você finalmente lembrou de mim. Está com medo?'*\n\nDaniel faz a pergunta que gela seu sangue: *'A pergunta é: quem morreu naquela estrada?'*\n\nHelena começa a rir baixo, um som que não combina com ela. Miguel hesita. Então você percebe algo impossível: Helena está descalça sobre o chão molhado, mas **não produz reflexo nas poças**.\n\nTeresa sussurra: *'Agora escolha.'*",
         "imagem": "https://placehold.co/800x400/220000/FFFFFF?text=O+Reflexo+Ausente",
@@ -764,8 +765,6 @@ historia = {
     },
 
     # === ROTA C1: A NOITE DO ACIDENTE E A FARTA VEM DE HELENA ===
-    # Certifique-se de que há uma vírgula logo após a chave anterior e cole isso dentro de 'historia':
-    
     "cena_c1_acidente": {
         "texto": "Você puxa Miguel para trás. A mulher na plataforma é Helena... ou pelo menos usa o rosto dela. Mas os pés não refletem nas poças do chão. Daniel se aproxima e começa a contar a verdade daquela noite chuvosa de estrada.\n\nUma chuva forte começa a cair *dentro* do vagão. O cheiro de asfalto molhado e borracha queimada toma o ar. A memória do acidente invade o espaço. Daniel confirma: seu carro perdeu o controle, vocês bateram, e naquela noite fria... você morreu no banco do motorista.",
         "imagem": "https://placehold.co/800x400/111133/FFFFFF?text=A+Noite+Do+Acidente",
@@ -791,7 +790,25 @@ historia = {
         ]
     },
 
-    
+    # ==========================================
+    # FINAIS DA ROTA C1
+    # ==========================================
+    "final_c1_lembrar": {
+        "texto": "Você aceita mergulhar de volta no instante exato do acidente, revivendo a escolha que condenou seu filho. Ao confrontar o Condutor conscientemente na lembrança, o pacto de egoísmo é desfeito.\n\nA ilusão do trem estilhaça. A negação se quebra e a verdadeira noite da estrada absorve o impacto. Você e Miguel finalmente atravessam para o lado de lá, encarando as consequências reais daquela escolha, mas livres da prisão infinita.\n\n**FINAL: A VERDADE DA ESTRADA**\n*O passado não pode ser desfeito, mas pode deixar de ser uma mentira.*",
+        "imagem": "https://placehold.co/800x400/220033/FFFFFF?text=A+Verdade+Da+Estrada",
+        "opcoes": [
+            {"label": "🎬 Explorar outra linha do tempo (Jogar Novamente)", "destino": "cap1_parte1", "reiniciar": True}
+        ]
+    },
+
+    "final_c1_apagar": {
+        "texto": "Você recusa a dor de reviver o acidente e opta por apagar as memórias, protegendo Miguel de sofrer a morte de novo.\n\nAs lembranças se esvaem como fumaça, e a falsa Helena na plataforma desaparece na escuridão. O trem continua sua viagem silenciosa pelas trevas, e você abraça seu filho no banco do vagão, ignorando o que aconteceu no mundo real.\n\n**FINAL: O ABRAÇO NO ESCURO**\n*Algumas vezes, a ignorância é o único refúgio que resta aos mortos.*",
+        "imagem": "https://placehold.co/800x400/000000/FFFFFF?text=O+Abraco+No+Escuro",
+        "opcoes": [
+            {"label": "🎬 Explorar outra linha do tempo (Jogar Novamente)", "destino": "cap1_parte1", "reiniciar": True}
+        ]
+    },
+
     # === ROTA C2: A MULHER NA PLATAFORMA E A CASA DA MENTIRA ===
     "cena_c2_plataforma": {
         "texto": "Você permite que Miguel vá ao encontro da mulher na plataforma que usa o rosto de Helena. Ela acerta detalhes que só sua esposa saberia, mas Daniel percebe o horror: *'Aquilo sabia a pergunta, não a resposta.'*\n\nMiguel cruza a porta e abraça a figura. Mas logo o corpo do garoto trava, os olhos ficam negros e a voz perde a vida. O disfarce desmorona: uma criatura escura, alta e deformada usa Helena como uma máscara. O painel avisa: **VIDA PENDENTE: 1 | VÍNCULO DE GUARDA EM PROCESSAMENTO**.",
@@ -810,7 +827,6 @@ historia = {
         ]
     },
 
-    
     # ==========================================
     # FINAIS DA ROTA C2
     # ==========================================
@@ -829,6 +845,9 @@ historia = {
             {"label": "🎬 Explorar outra linha do tempo (Jogar Novamente)", "destino": "cap1_parte1", "reiniciar": True}
         ]
     },
+
+
+    
     # === ROTA D1: O ARQUIVO DO HOMEM QUE NÃO EXISTE ===
     "cena_d1_investigar": {
         "texto": "Você senta à mesa e começa a folhear a pasta do Arquivo. Relatórios de 1997, 2004, 2013... em todas as fotografias, você aparece com a mesma idade. O documento revela a verdade aterradora: **você foi devolvido 12 vezes**. Na duodécima, houve uma falha de integração. Você não é o original; você é uma reconstrução feita com material residual do Arquivo.\n\nA criatura que estava nas suas costas se vira e revela ter a cicatriz do original. Ela diz: *'Depois de tantas devoluções, ninguém mais sabe qual versão foi a primeira.'*",
