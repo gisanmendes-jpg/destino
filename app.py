@@ -466,6 +466,88 @@ historia = {
             {"label": "B) PEGAR A MÃO DO SEU EU MAIS VELHO (Recusar a morte e virar o Condutor)", "destino": "final_egoista", "reiniciar": True}
         ]
     },
+    # ==========================================
+    # FINAIS DA HISTÓRIA
+    # ==========================================
+    "final_sacrificio": {
+        "texto": "Miguel segura sua mão. Do outro lado da porta, a estrada permanece congelada no instante do acidente. Chuva suspensa no ar. O Condutor estende a mão: *'Ainda dá tempo.'*\n\nVocê olha para aquela versão velha de si mesmo. O celular vibra: **NÃO FAÇA ISSO. VOCÊ NÃO SABE O QUE EXISTE DEPOIS.**\n\nVocê sorri tristemente e guarda o telefone.\n— *Esse sempre foi o problema. Eu tive medo demais de descobrir.*",
+        "imagem": "https://placehold.co/800x400/111122/FFFFFF?text=O+Medo+De+Descobrir",
+        "opcoes": [
+            {"label": "Olhar para Miguel...", "destino": "final_sacrificio_2"}
+        ]
+    },
+
+    "final_sacrificio_2": {
+        "texto": "Agora você lembra de tudo. O primeiro passo. A bicicleta. Miguel pedindo para você não ir. Você se ajoelha diante do seu filho.\n\n— *Eu deveria ter protegido você naquela noite. O acidente foi um acidente. O que veio depois não.*\n\nVocê segura o rosto dele. Teresa observa de longe, chorando. Daniel e Ricardo permanecem em silêncio.\n— *Eu fiz uma escolha porque estava com medo. E você pagou por ela. Não vai pagar de novo.*",
+        "imagem": "https://placehold.co/800x400/223344/FFFFFF?text=A+Despedida",
+        "opcoes": [
+            {"label": "Levantar-se e encarar o Condutor...", "destino": "final_sacrificio_3"}
+        ]
+    },
+
+    "final_sacrificio_3": {
+        "texto": "O Condutor avisa, irritado: *'Você não sabe o que acontece quando atravessar. Você deixa de existir.'*\nVocê olha para a estrada: *'Não. Eu termino.'*\n\nAs luzes piscam. As paredes do trem vibram. Dezenas de versões suas aparecem refletidas nas janelas, batendo no vidro e implorando:\n— *NÃO FAZ ISSO! VOCÊ VAI MATAR TODOS NÓS!*\n\nElas não são fantasmas. São restos de decisões egoístas que só continuam existindo se o ciclo continuar. Você olha para elas.\n— *Desculpa.*\n\nVocê segura a mão de Miguel e atravessa.",
+        "imagem": "https://placehold.co/800x400/331111/FFFFFF?text=O+Fim+Do+Ciclo",
+        "opcoes": [
+            {"label": "Ouvir o som do impacto...", "destino": "final_sacrificio_4"}
+        ]
+    },
+
+    "final_sacrificio_4": {
+        "texto": "No instante em que seu pé toca a estrada... o mundo volta a se mover. A chuva cai. A buzina explode. Metal se contorce.\n\nEscuridão. Depois, luzes, sirenes, homens correndo. *'Temos pulso! Retira a criança primeiro!'*\nMiguel abre os olhos no asfalto. Um socorrista segura seu rosto. Miguel procura por você, desesperado. Mas a resposta é apenas um lençol sendo colocado sobre o banco do motorista.\n\nAo lado da estrada, um relógio digital muda. **00:17... 00:18**.\n\nNo trem, Teresa olha para o painel. Pela primeira vez em sessenta e dois anos... ele também muda. **00:18**. As luzes dos vagões se apagam lentamente.",
+        "imagem": "https://placehold.co/800x400/000000/FFFFFF?text=00:18",
+        "opcoes": [
+            {"label": "Anos depois...", "destino": "final_sacrificio_epilogo"}
+        ]
+    },
+
+    "final_sacrificio_epilogo": {
+        "texto": "Miguel está adulto. Encontra a fotografia da família. No verso: *'Volto antes da meia-noite.'*\n\nEle escuta um trem. Sem trilhos, sem fazer barulho, uma composição antiga atravessa lentamente a rua lá fora. Na última janela, há alguém sentado. Você. Com a mesma idade da noite do acidente. Em paz.\n\nVocê sorri e acena. Miguel acena de volta. O trem desaparece na escuridão. O celular dele acende sobre a mesa: **00:18**. Nenhuma mensagem.\n\nMuito longe, um alto-falante chia. Uma voz quase inaudível anuncia:\n— *Passageiro liberado.*\n\n**FINAL: O SACRIFÍCIO**\n*Você finalmente chegou ao minuto seguinte.*",
+        "imagem": "https://placehold.co/800x400/001100/FFFFFF?text=PASSAGEIRO+LIBERADO",
+        "opcoes": [
+            {"label": "🎬 Investigar outra linha do tempo (Jogar Novamente)", "destino": "cap1_parte1", "reiniciar": True}
+        ]
+    },
+
+    "final_egoista": {
+        "texto": "A estrada está diante de vocês. A morte esperando. O Condutor estende a mão. O celular vibra: **NÓS CONSEGUIMOS SAIR DE NOVO.**\n\nVocê olha para o próprio cadáver no carro e sente o mesmo terror de todas as outras vezes. *'Eu não consigo'*, você sussurra. Você solta a mão de Miguel.\n\n*'Pai, por favor!'* A criança tenta agarrar você, mas você o empurra para trás. As portas se fecham entre vocês. Miguel bate no vidro, desesperado: *'VOCÊ PROMETEU!'*\n\nA plataforma desaparece. A voz dele some na escuridão: *'Você prometeu voltar...'*",
+        "imagem": "https://placehold.co/800x400/110000/FFFFFF?text=A+Traicao",
+        "opcoes": [
+            {"label": "Acordar...", "destino": "final_egoista_2"}
+        ]
+    },
+
+    "final_egoista_2": {
+        "texto": "Você desperta com violência. Luz branca. *'Temos pulso!'*\n\nVocê sobreviveu. O médico se aproxima no hospital. Você pergunta por Miguel. O médico hesita e baixa os olhos. Você entende.\n\nOs anos passam. Você muda de cidade, evita trens, envelhece consumido pela culpa. Uma cirurgia tardia deixa uma cicatriz familiar atravessando sua sobrancelha direita.\n\nDécadas depois. Chove lá fora. Você está sozinho em casa. O relógio marca **00:16**. Três batidas soam na sua janela. *TOC. TOC. TOC.*",
+        "imagem": "https://placehold.co/800x400/222222/FFFFFF?text=Os+Anos+Passam",
+        "opcoes": [
+            {"label": "Olhar o celular vibrar...", "destino": "final_egoista_3"}
+        ]
+    },
+
+    "final_egoista_3": {
+        "texto": "Não existe número, apenas um nome na tela: **MIGUEL**.\n\n**VOCÊ PROMETEU VOLTAR.**\n**PAI?**\n**ESTOU ESPERANDO.**\n\nVocê atira o telefone no chão. O relógio muda para **00:17**. Escuridão total. O som de metal contra metal invade a sala.\n\nAs luzes acendem. Você não está em casa. Está sentado em uma cabine estreita, cheia de manômetros e alavancas. No vidro à frente, seu reflexo exibe o rosto com a cicatriz. O rosto da plataforma.\n\nA voz da entidade sussurra atrás de você: *'Toda vida devolvida precisa ser cobrada. Você não foi escolhido. Você se ofereceu.'*",
+        "imagem": "https://placehold.co/800x400/1a1a3a/FFFFFF?text=A+Cabine",
+        "opcoes": [
+            {"label": "Olhar para o banco ao lado...", "destino": "final_egoista_4"}
+        ]
+    },
+
+    "final_egoista_4": {
+        "texto": "Miguel, ainda com nove anos, molhado e com sangue seco no rosto, está sentado ali.\n*'Agora posso ir embora?'*, ele pergunta.\n\nA porta da cabine se abre para uma luz branca. Miguel se levanta. *'Dessa vez é você que fica.'* Ele atravessa e a porta se fecha.\n\nO painel muda: **PASSAGEIRO MIGUEL: LIBERADO.**\n\nO microfone liga sozinho. A sombra atrás de você ordena que anuncie a próxima estação. Seu reflexo perde a humanidade, restando apenas olhos negros. Você pega o microfone, com uma voz distorcida, e diz: *'Próxima estação... Santa Lúcia.'*",
+        "imagem": "https://placehold.co/800x400/000000/FFFFFF?text=A+Substituicao",
+        "opcoes": [
+            {"label": "Olhar pela janela do trem...", "destino": "final_egoista_5"}
+        ]
+    },
+
+    "final_egoista_5": {
+        "texto": "Na plataforma, você vê a mulher, o policial, a velha, a criança e... VOCÊ. Mais jovem. Acabando de acordar.\n\nVocê acompanha o trem, bate no vidro e grita *'NÃO DESÇA!'*, percebendo finalmente que o homem velho nunca foi o seu futuro, mas você mesmo. Condenado.\n\nVocê sente um celular no bolso da farda de ferroviário. Uma mensagem pronta: **NÃO DEIXE A CRIANÇA CHEGAR À ESTAÇÃO FINAL.**\nVocê hesita. Poderia dizer a verdade... mas vê Miguel no trem. O medo egoísta vence de novo. Você aperta ENVIAR.\n\nO relógio da cabine volta para: **00:16**.\nNo painel: **CONDUTOR. VIAGEM 13 INICIADA.**\n\n**FINAL: O CONDUTOR**\n*Algumas pessoas têm medo de morrer. Outras fazem do medo uma eternidade.*",
+        "imagem": "https://placehold.co/800x400/110000/FFFFFF?text=VIAGEM+13+INICIADA",
+        "opcoes": [
+            {"label": "🎬 Iniciar a Viagem 13 (Jogar Novamente)", "destino": "cap1_parte1", "reiniciar": True}
+        ]
+    }
     
     
 }
