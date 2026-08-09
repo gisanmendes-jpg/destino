@@ -68,7 +68,7 @@ historia = {
     },
     "cena_a_decisao": {
         "texto": "Você sente o estômago revirar. Teresa estende a mão enrugada para você.\n— Me dê o telefone, agora!\n\nAntes que você responda, surge a última mensagem no visor, como um aviso final:\n**VOCÊ PRECISA ESCOLHER EM QUEM ACREDITAR ANTES QUE O CONDUTOR ENTRE.**\n\nO cronômetro marca **01:58**.\n\nVocê olha para Teresa. Depois para os outros passageiros estranhos. Miguel, o menino no fundo, parece estar chorando sem fazer som. Você percebe uma coisa perturbadora: a tela do celular reflete seu rosto. Mas por uma fração de segundo... o reflexo não é o seu, mas o daquele homem velho na plataforma.",
-        "imagem": "reflexo,png",
+        "imagem": "reflexo.png",
         "opcoes": [
             {"label": "A1) Esconder o celular e confiar nas mensagens misteriosas", "destino": "cena_a1_mensagens", "ganha_memoria": "confiou_futuro"},
             {"label": "A2) Entregar o celular e confiar em Teresa", "destino": "cena_a2_teresa", "ganha_memoria": "entregou_celular"}
