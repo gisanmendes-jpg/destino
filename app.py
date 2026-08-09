@@ -547,7 +547,43 @@ historia = {
         "opcoes": [
             {"label": "🎬 Iniciar a Viagem 13 (Jogar Novamente)", "destino": "cap1_parte1", "reiniciar": True}
         ]
-    }
+    },
+# === ROTA B1: OBEDECER E EXIGIR RESPOSTAS ===
+    "cena_b1_obedecer": {
+        "texto": "Você decide que sobreviver é mais importante do que a sua curiosidade. Você recua e se afasta da figura sentada no seu banco.\n\n— Eu não vou falar com ele — você decreta.\n\nTeresa solta a respiração, visivelmente aliviada. Mas você não terminou. Você se vira para ela e a encurrala contra o banco.\n\n— Se as regras são a única coisa nos mantendo vivos, eu quero saber todas elas. Agora. Quem criou essas regras, Teresa? E como você as conhece antes mesmo de acontecerem?",
+        "imagem": "https://placehold.co/800x400/112233/FFFFFF?text=Exigindo+Respostas",
+        "opcoes": [
+            {"label": "Ouvir a explicação de Teresa...", "destino": "cap2_b1_revelacao"}
+        ]
+    },
+
+    "cap2_b1_revelacao": {
+        "texto": "Teresa desvia o olhar, derrotada. Ela sussurra a verdade que você não queria ouvir:\n\n— As regras não existem para salvar a gente da escuridão lá fora. Elas existem para impedir que os mortos descubram cedo demais que estão mortos.\n\nVocê sente o sangue gelar. Teresa explica que todos no trem estão presos entre o fim da linha e a aceitação do fim. Quem compreende e aceita, segue adiante. Mas quem se recusa, permanece tempo demais... e começa a se deformar, perdendo a identidade até se transformar em coisas como o 007.\n\n— E ainda há uma regra que eu nunca contei a ninguém — Teresa acrescenta.",
+        "imagem": "https://placehold.co/800x400/221122/FFFFFF+text=A+Verdade+Das+Regras",
+        "opcoes": [
+            {"label": "B1.1) Continuar obedecendo e exigir que ela revele a última regra", "destino": "cena_b1_1_regra", "ganha_memoria": "sabe_ultima_regra"},
+            {"label": "B1.2) Recusar-se a obedecer e questionar quem criou o trem", "destino": "cena_b1_2_recusa", "ganha_memoria": "rejeitou_regras"}
+        ]
+    },
+
+    # === ROTA B2: QUEBRAR A REGRA E ABORDAR A CÓPIA ===
+    "cena_b2_quebrar": {
+        "texto": "Você ignora Teresa e dá o primeiro passo na direção da figura. Você não quer dizer o seu nome, só quer ver o rosto dela.\n\nMas, quando você avança... a figura fala sem se virar, usando a sua exata voz:\n\n— *Você sempre chega mais perto. Foi assim que eu entrei da primeira vez.*\n\nTeresa empalidece. — *Não escute.*\n\nA figura começa a virar o rosto lentamente e diz:\n— *Pergunta para ela o que aconteceu com os outros seis.*",
+        "imagem": "https://placehold.co/800x400/331111/FFFFFF?text=Os+Outros+Seis",
+        "opcoes": [
+            {"label": "Encarar o seu próprio rosto...", "destino": "cap2_entidade_revela"}
+        ]
+    },
+
+    "cap2_entidade_revela": {
+        "texto": "Você se aproxima e olha nos olhos da cópia. No instante em que o reconhecimento é mútuo, algo terrível acontece.\n\nA entidade não ataca você com violência. Ela começa a **roubar**. Primeiro o rosto, depois o timbre da voz, as lembranças, o jeito de respirar. Cada segundo que passa torna a cópia mais real, mais vívida... enquanto você começa a desbotar, tornando-se uma silhueta borrada.\n\nMiguel olha da cópia para você, completamente perdido, sem saber qual de vocês é o verdadeiro pai. O horror se instala: o 007 não precisa matar você. Ele só precisa fazer com que todos acreditem que *ele* é você.",
+        "imagem": "https://placehold.co/800x400/110000/FFFFFF+text=O+Roubo+De+Identidade",
+        "opcoes": [
+            {"label": "B2.1) Tentar provar aos passageiros que você é o verdadeiro", "destino": "cena_b2_1_provar", "ganha_memoria": "tentou_provar"},
+            {"label": "B2.2) Parar de disputar a identidade e seguir a cópia", "destino": "cena_b2_2_seguir", "ganha_memoria": "seguiu_copia"}
+        ]
+    },
+    
     
     
 }
