@@ -107,16 +107,48 @@ historia = {
     },
 
     "cena_pegadas": {
-        "texto": "O trem para. O sinal toca.\n\n*'Regra 4: Nunca seja a primeira pessoa a sair'*, a velha avisa.\n\nA porta abre. Não há ninguém. Então, água pinga no chão. *TIC.* Pegadas invisíveis molhadas começam a entrar no vagão e param exatamente diante dos seus pés.\n\nUma respiração gélida toca sua orelha. A sua própria voz sussurra: *'Você não deveria ter acordado.'*\n\nAs luzes apagam. Alguém grita. Quando voltam, o trem está andando... e no banco onde você acordou, há alguém sentado de costas, usando a sua roupa.",
+        "texto": "O trem para. A porta abre. Não há ninguém. Então, água pinga no chão. *TIC.* Pegadas invisíveis molhadas começam a entrar no vagão e param exatamente diante dos seus pés.\n\nUma respiração gélida toca sua orelha. A sua própria voz sussurra: *'Você não deveria ter acordado.'*\n\nAs luzes apagam. Alguém grita. Quando voltam, o trem está andando... e no banco onde você acordou, há alguém sentado de costas, usando a sua roupa.",
         "imagem": "https://placehold.co/800x400/1a1a3a/FFFFFF?text=A+Invasao+Invisivel",
         "opcoes": [
-            # AQUI DEFINIMOS AS MEMÓRIAS DA ROTA B
-            {"label": "B1) Exigir que a velha conte todas as regras.", "destino": "cena_b1", "ganha_memoria": "pressionou_velha"},
-            {"label": "B2) Ignorar a velha e ir até a pessoa sentada no seu lugar.", "destino": "cena_b2", "ganha_memoria": "enfrentou_copia"},
-            {"label": "B3) Perguntar à criança o que ela quis dizer.", "destino": "cena_b3", "ganha_memoria": "interrogou_crianca"},
-            {"label": "B4) Perguntar ao policial se ele também vê a cópia.", "destino": "cena_b4", "ganha_memoria": "falou_policial"}
+            {"label": "Observar a figura no banco...", "destino": "cena_b_copia"}
         ]
     },
+
+    "cena_b_copia": {
+        "texto": "As pegadas molhadas desapareceram. Mas a pessoa sentada no seu antigo banco continua ali. Imóvel.\n\nTeresa não tira os olhos dela.\n— Não fale com ele.\nMiguel observa do outro lado do vagão.\n— Ainda não.\n\nVocê olha para os dois. — 'Ainda' quando?\n\nNenhum responde. Então a pessoa no banco inclina lentamente a cabeça. Não chega a se virar. Apenas o suficiente para mostrar parte do rosto. Seu rosto.",
+        "imagem": "https://placehold.co/800x400/111122/FFFFFF?text=Seu+Rosto",
+        "opcoes": [
+            {"label": "Tentar falar algo...", "destino": "cena_b_nome"}
+        ]
+    },
+
+    "cena_b_nome": {
+        "texto": "Você recua. Teresa segura seu braço.\n— Não reconheça. Não diga quem você acha que ele é.\n\nO homem de sobretudo se levanta, parecendo realmente preocupado. — Ela tem razão.\n\nA figura no banco levanta uma das mãos. Aponta para você. Bate duas vezes no próprio peito. *TOC. TOC.* Depois aponta para você novamente.\n\nMiguel sussurra: — Ele quer que você diga.\n— Diga o quê?\n— Seu nome. Porque algumas coisas aqui não têm nome até alguém dar um.",
+        "imagem": "https://placehold.co/800x400/000000/FFFFFF?text=O+Nome",
+        "opcoes": [
+            {"label": "Ver a figura se mover...", "destino": "cena_b_decisao"}
+        ]
+    },
+
+    "cena_b_decisao": {
+        "texto": "Silêncio. A figura começa a se virar.\n\nTeresa aperta seu braço.\n— Escolha agora.\n\nVocê precisa decidir: aceitar que obedecer às regras é a única coisa mantendo você vivo (e interrogar Teresa sobre a origem delas), ou ignorar os avisos, aproximar-se e descobrir o que é essa entidade.",
+        "imagem": "https://placehold.co/800x400/220000/FFFFFF?text=A+Regra",
+        "opcoes": [
+            {"label": "B1) Afastar-se da figura e exigir respostas de Teresa", "destino": "cena_b1_obedecer", "ganha_memoria": "obedeceu_regras"},
+            {"label": "B2) Ignorar Teresa e se aproximar da cópia", "destino": "cena_b2_quebrar", "ganha_memoria": "quebrou_regra"}
+        ]
+    },
+
+    # === CONSEQUÊNCIA IMEDIATA DA QUEBRA DE REGRA (Gatilho) ===
+    "cena_b2_quebrar": {
+        "texto": "Você ignora Teresa e dá o primeiro passo na direção da figura. Você não pretende dizer o seu nome. Só quer ver o rosto dela.\n\nMas, quando você avança... a figura fala sem se virar, com a sua exata voz:\n\n— Você sempre chega mais perto. Foi assim que eu entrei da primeira vez.\n\nTeresa empalidece. — Não escute.\nA figura começa a virar o rosto.\n— Pergunta para ela o que aconteceu com os outros seis.",
+        "imagem": "https://placehold.co/800x400/331111/FFFFFF?text=Os+Outros+Seis",
+        "opcoes": [
+            {"label": "Encarar a figura...", "destino": "cap2_entidade_revela"} # Cena a ser escrita depois
+        ]
+    },
+
+    
     "cena_crianca": {
         "texto": "Você ignora a velha e vai até a criança. Os olhos dela encontram os seus. Sem confusão, sem susto.\n\n*'Você demorou'*, ela diz.\n\nVocê para diante do banco e se agacha. *'Por que estava esperando por mim?'*\n\nA criança olha para o seu rosto, depois para suas mãos. *'Porque você prometeu voltar.'*\n\nUma pressão surge atrás dos seus olhos. Uma tentativa de lembrar de um sonho. *'Eu nunca vi você antes'*, você diz.\n\nO rosto da criança muda para uma expressão triste. *'Você sempre fala isso.'*",
         "imagem": "https://placehold.co/800x400/1a1a2e/FFFFFF?text=A+Crianca",
