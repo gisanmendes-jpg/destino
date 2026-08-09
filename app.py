@@ -394,7 +394,46 @@ historia = {
             {"label": "B) ACEITAR O ACORDO NOVAMENTE (Impedir Miguel de atravessar e viver)", "destino": "final_egoista", "reiniciar": True}
         ]
     },
+    "cena_a2_2_isca": {
+        "texto": "Você segura a mão de Teresa e a impede de sair do trem, usando-a como isca para a coisa na plataforma. *'Você quer me usar como isca'*, ela ri, sem humor. *'Você sempre acha que pode ser mais inteligente que ele.'*\n\nA menina chama: *'Mãe... mais perto.'*\nTeresa para. *'Não. Minha filha morreu em 1964. E você não é ela.'*\n\nO sorriso da menina desaparece. As luzes da estação apagam, uma por uma. Resta apenas o poste acima dela. Então, seu corpo começa a crescer. Os braços se alongam. O vestido se rasga. O corpo fica alto demais. Magro demais. Impossível.",
+        "imagem": "https://placehold.co/800x400/050505/FFFFFF?text=A+Criatura+Cresce",
+        "opcoes": [
+            {"label": "Ouvir a voz da criatura...", "destino": "cap2_a2_2_divida"}
+        ]
+    },
 
+    "cap2_a2_2_divida": {
+        "texto": "A criatura abre a boca, mas a voz vem dos alto-falantes do trem:\n**— PASSAGEIRA TERESA. DÍVIDA PENDENTE DESDE 1964. UMA VIDA.**\n\nTeresa chora, dizendo que tentou salvar a filha. A criatura sorri: **— E DEU OUTRA PESSOA EM TROCA. ESSA É A MENTIRA QUE ELA CONTA HÁ SESSENTA E DOIS ANOS.**\n\nAs luzes apagam. Quando voltam, a menina monstruosa sumiu. No lugar dela está VOCÊ. Mais velho. Com a cicatriz no rosto.\nO seu celular vibra: **NÃO ACREDITE NELE.**\nO homem na plataforma tira um telefone do bolso e mostra a tela para você: **NÃO ACREDITE EM MIM.**",
+        "imagem": "https://placehold.co/800x400/220000/FFFFFF?text=O+Reflexo+Falso",
+        "opcoes": [
+            {"label": "Perguntar quem ele é...", "destino": "cap2_a2_2_funcao"}
+        ]
+    },
+
+    "cap2_a2_2_funcao": {
+        "texto": "O rosto da figura muda rapidamente: Daniel. Ricardo. Helena. Miguel. Teresa. E volta a ser o seu.\n*'Qual deles você prefere?'*\n\nVocê recua. *'Você é o Condutor?'*\n*'Ainda não'*, ele responde. *'Condutor é uma função. Alguém precisa manter os passageiros entre o último segundo da vida e o primeiro da morte.'*\n\nA criatura ergue os braços. As janelas do trem deixam de mostrar a estação e mostram dezenas de viagens passadas. Em uma, você ataca Miguel. Em outra, implora. Em outra... você está sentado na cabine. Conduzindo.",
+        "imagem": "https://placehold.co/800x400/111133/FFFFFF?text=As+Janelas+Do+Passado",
+        "opcoes": [
+            {"label": "Lembrar do acidente...", "destino": "cap2_a2_2_memoria"}
+        ]
+    },
+
+    "cap2_a2_2_memoria": {
+        "texto": "A estrada. O acidente. Você preso no carro. Miguel ao lado. Uma voz pergunta: *'Você quer viver?'*\nVocê fecha os olhos: *'Não.'*\nA memória continua: *'Sim.'*\n\nVocê abre os olhos no trem. Miguel diz: *'Pai?'*. A memória voltou. Você percebe que deixou o menino aqui, preso entre a vida e a morte, em todas as viagens.\n\nA voz da entidade fica suave, quase humana: *'Humanos fazem coisas extraordinárias quando percebem que vão morrer.'*\nO alto-falante chia: **Próxima estação... Terminal.**\nO cenário da plataforma muda para a exata cena do acidente, paralisada no tempo.",
+        "imagem": "https://placehold.co/800x400/331100/FFFFFF?text=O+Terminal",
+        "opcoes": [
+            {"label": "Olhar para o homem velho...", "destino": "cap2_a2_2_decisao"}
+        ]
+    },
+
+    "cap2_a2_2_decisao": {
+        "texto": "A entidade sorri: *'Basta ele atravessar. Ele volta, e você finalmente termina de morrer.'*\n\nSeu celular vibra: **NÃO FAÇA ISSO. NÓS CONSEGUIMOS SAIR DE NOVO.**\nVocê olha para trás. O homem velho agora está DENTRO do vagão. *'Eu sobrevivi'*, diz a sua versão egoísta, cujas roupas estão se transformando lentamente no uniforme do ferroviário.\n\nTeresa sussurra: *'Esta é sua última viagem. Na próxima, não haverá mais diferença entre vocês.'*\n\nO painel apaga e acende com a mensagem final:\n**SUBSTITUIÇÃO DO CONDUTOR DISPONÍVEL. ACEITAR?**",
+        "imagem": "https://placehold.co/800x400/550000/FFFFFF?text=A+Decisao+Final",
+        "opcoes": [
+            {"label": "A) SOLTAR O PASSADO E LEVAR MIGUEL (Aceitar sua morte e salvar o menino)", "destino": "final_sacrificio", "reiniciar": True},
+            {"label": "B) PEGAR A MÃO DO SEU EU MAIS VELHO (Recusar a morte e virar o Condutor)", "destino": "final_egoista", "reiniciar": True}
+        ]
+    },
     
     
 }
