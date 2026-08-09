@@ -182,16 +182,39 @@ historia = {
     },
 
     "cena_passado_4": {
-        "texto": "O vagão inteiro fica em silêncio. Miguel para de lutar.\n\nEntão, o relógio do trem muda pela primeira vez: **00:17**.\n\nO alto-falante chia e diz apenas: *'Memória reconhecida.'*\n\nA mulher na plataforma sorri. Mas você percebe algo terrível: Helena nunca sorria daquele jeito.\n\nMiguel olha para você: *'É ela?'*",
+        "texto": "O vagão inteiro fica em silêncio. Miguel para de lutar.\n\nEntão, o relógio do trem muda pela primeira vez: **00:17**.\nO alto-falante chia e diz apenas: *'Memória reconhecida.'*\n\nA mulher na plataforma sorri. Mas você percebe algo terrível: Helena nunca sorria daquele jeito.\n\nMiguel olha para você: *'É ela?'*",
         "imagem": "https://placehold.co/800x400/550000/FFFFFF?text=Memoria+Reconhecida",
         "opcoes": [
-            # AQUI ESTÃO AS MEMÓRIAS DA ROTA C
-            {"label": "C1) Segurar Miguel e exigir que ele conte sobre o acidente.", "destino": "cena_c1", "ganha_memoria": "segurou_miguel"},
-            {"label": "C2) Chamar por Helena para testar se é ela mesma.", "destino": "cena_c2", "ganha_memoria": "chamou_helena"},
-            {"label": "C3) Confrontar o homem de sobretudo sobre o acidente.", "destino": "cena_c3", "ganha_memoria": "interrogou_sobretudo"},
-            {"label": "C4) Soltar Miguel e permitir que ele saia.", "destino": "cena_c4", "ganha_memoria": "soltou_miguel"}
+            {"label": "Tentar lembrar do rosto dela...", "destino": "cena_c_conflito"}
         ]
     },
+
+    "cena_c_conflito": {
+        "texto": "Uma lembrança surge: Helena rindo. Miguel correndo. Felicidade. Mas logo muda para uma memória violenta: Helena chorando. Uma mala. Você gritando: *'Se sair agora, não precisa voltar.'*\n\nMiguel aperta sua mão: *'Foi a última coisa que você falou para ela.'*\n\nDaniel se aproxima, tenso. *'Não continue. Lembrar não significa que aconteceu exatamente daquele jeito.'*\n\nTeresa reage rispidamente quando a mulher chama por Miguel: *'Eu sei o que acontece quando os mortos chamam pelo nome dos vivos.'*",
+        "imagem": "https://placehold.co/800x400/221111/FFFFFF?text=Os+Mortos",
+        "opcoes": [
+            {"label": "Encarar a mulher na plataforma...", "destino": "cena_c_revelacao"}
+        ]
+    },
+
+    "cena_c_revelacao": {
+        "texto": "Sob a luz, você reconhece Helena. Ela sorri. *'Você finalmente lembrou de mim. Está com medo?'*\n\nDaniel faz a pergunta que gela seu sangue: *'A pergunta é: quem morreu naquela estrada?'*\n\nHelena começa a rir baixo, um som que não combina com ela. Miguel hesita. Então você percebe algo impossível: Helena está descalça sobre o chão molhado, mas **não produz reflexo nas poças**.\n\nTeresa sussurra: *'Agora escolha.'*",
+        "imagem": "https://placehold.co/800x400/111122/FFFFFF?text=Sem+Reflexo",
+        "opcoes": [
+            {"label": "C1) Proteger Miguel e obrigar Daniel a revelar a verdade", "destino": "cena_c1_proteger", "ganha_memoria": "protegeu_miguel"},
+            {"label": "C2) Confiar na memória e soltar Miguel para a mãe", "destino": "cena_c2_soltar", "ganha_memoria": "acreditou_helena"}
+        ]
+    },
+
+    # === CONSEQUÊNCIA IMEDIATA DA ESCOLHA C2 (Gatilho) ===
+    "cena_c2_soltar": {
+        "texto": "Você aceita que é Helena e decide soltá-lo. Mas pensa em fazer uma única pergunta que só sua verdadeira esposa saberia.\n\nHelena sorri antes mesmo de você abrir a boca e diz:\n— A porta era vermelha.\n\nSeu sangue esfria. Era exatamente o que você ia perguntar.\nDaniel sussurra: *'Ela está dentro da sua cabeça.'*\n\nDo lado de fora, Helena abre os braços para Miguel. E atrás dela... por um único segundo... você vê alguma coisa muito alta se mover na escuridão.",
+        "imagem": "https://placehold.co/800x400/000000/FFFFFF?text=A+Coisa+Na+Escuridao",
+        "opcoes": [
+            {"label": "Ver o que acontece a seguir...", "destino": "cap2_miguel_helena"} # Cena a ser escrita depois
+        ]
+    },
+    
     "cena_fuga": {
         "texto": "Você ignora todos. Ignora o aviso da velha. Apenas destranca a porta e atravessa a ponte metálica entre os vagões. Atrás de você, a velha grita para não fechar a porta, mas um solavanco do trem a bate com violência.\n\nAgora você está sozinho.\n\nVocê entra no próximo vagão. As luzes acendem. Há cerca de quarenta passageiros, mas ninguém responde aos seus chamados.\n\nVocê toca o ombro de um senhor de terno. O corpo cai para o lado. Os olhos estão abertos e acinzentados. Estão todos mortos.",
         "imagem": "https://placehold.co/800x400/101010/FFFFFF?text=O+Vagao+Dos+Mortos",
