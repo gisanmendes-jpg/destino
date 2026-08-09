@@ -756,6 +756,7 @@ historia = {
     
     # === TELA DE ESCOLHA ENTRE C1 E C2 ===
     
+    # === TELA DE ESCOLHA ENTRE C1 E C2 ===
     "cena_escolha_c": {
         "texto": "Sob a luz, você reconhece Helena. Ela sorri: *'Você finalmente lembrou de mim. Está com medo?'*\n\nDaniel faz a pergunta que gela seu sangue: *'A pergunta é: quem morreu naquela estrada?'*\n\nHelena começa a rir baixo, um som que não combina com ela. Miguel hesita. Então você percebe algo impossível: Helena está descalça sobre o chão molhado, mas **não produz reflexo nas poças**.\n\nTeresa sussurra: *'Agora escolha.'*",
         "imagem": "https://placehold.co/800x400/220000/FFFFFF?text=O+Reflexo+Ausente",
@@ -765,7 +766,7 @@ historia = {
         ]
     },
 
-    # === ROTA C1: A NOITE DO ACIDENTE E A FARTA VEM DE HELENA ===
+    # === ROTA C1: A NOITE DO ACIDENTE ===
     "cena_c1_acidente": {
         "texto": "Você puxa Miguel para trás. A mulher na plataforma é Helena... ou pelo menos usa o rosto dela. Mas os pés não refletem nas poças do chão. Daniel se aproxima e começa a contar a verdade daquela noite chuvosa de estrada.\n\nUma chuva forte começa a cair *dentro* do vagão. O cheiro de asfalto molhado e borracha queimada toma o ar. A memória do acidente invade o espaço. Daniel confirma: seu carro perdeu o controle, vocês bateram, e naquela noite fria... você morreu no banco do motorista.",
         "imagem": "https://placehold.co/800x400/111133/FFFFFF?text=A+Noite+Do+Acidente",
@@ -791,9 +792,6 @@ historia = {
         ]
     },
 
-    # ==========================================
-    # FINAIS DA ROTA C1
-    # ==========================================
     "final_c1_lembrar": {
         "texto": "Você aceita mergulhar de volta no instante exato do acidente, revivendo a escolha que condenou seu filho. Ao confrontar o Condutor conscientemente na lembrança, o pacto de egoísmo é desfeito.\n\nA ilusão do trem estilhaça. A negação se quebra e a verdadeira noite da estrada absorve o impacto. Você e Miguel finalmente atravessam para o lado de lá, encarando as consequências reais daquela escolha, mas livres da prisão infinita.\n\n**FINAL: A VERDADE DA ESTRADA**\n*O passado não pode ser desfeito, mas pode deixar de ser uma mentira.*",
         "imagem": "https://placehold.co/800x400/220033/FFFFFF?text=A+Verdade+Da+Estrada",
@@ -810,17 +808,17 @@ historia = {
         ]
     },
 
-    # === ROTA C2: A MULHER NA PLATAFORMA E A CASA DA MENTIRA ===
+    # === ROTA C2: A MULHER NA PLATAFORMA ===
     "cena_c2_plataforma": {
-        "texto": "Você permite que Miguel vá ao encontro da mulher na plataforma que usa o rosto de Helena. Ela acerta detalhes que só sua esposa saberia, mas Daniel percebe o horror: *'Aquilo sabia a pergunta, não a resposta.'*\n\nMiguel cruza a porta e abraça a figura. Mas logo o corpo do garoto trava, os olhos ficam negros e a voz perde a vida. O disfarce desmorona: uma criatura escura, alta e deformada usa Helena como uma máscara. O painel avisa: **VIDA PENDENTE: 1 | VÍNCULO DE GUARDA EM PROCESSAMENTO**.",
-        "imagem": "https://placehold.co/800x400/220000/FFFFFF?text=A+mascara+de+Helena",
+        "texto": "Você aceita que é Helena e decide soltá-lo. Mas pensa em fazer uma única pergunta que só sua verdadeira esposa saberia.\n\nHelena sorri antes mesmo de você abrir a boca e diz: — A porta vermelha.\n\nSeu sangue esfria. Era exatamente o que você ia perguntar. Daniel sussurra: *'Ela está dentro da sua cabeça.'*\n\nDo lado de fora, Helena abre os braços para Miguel. E atrás dela... por um único segundo... você vê alguma coisa muito alta se mover na escuridão.",
+        "imagem": "https://placehold.co/800x400/220000/FFFFFF?text=A+Coisa+Na+Escuridao",
         "opcoes": [
-            {"label": "Encarar a verdade sobre a sua culpa...", "destino": "cap2_c2_culpa"}
+            {"label": "Ver o que acontece a seguir...", "destino": "cena_c2_culpa"}
         ]
     },
 
-    "cap2_c2_culpa": {
-        "texto": "A criatura revela a arma mais cruel: o esquecimento não foi causado pelo acidente. **Foi você quem pediu.** \n\nApós a morte de Miguel, incapaz de suportar a dor, você implorou: *'Tira os dois de mim.'* E agora, ao reconhecer a entidade como Helena, você deu autorização para ela assumir o papel de guardiã do garoto. O vínculo está em **97%**.\n\nTeresa grita que ainda há duas formas de quebrar o vínculo antes que ele se feche por completo: recuperar a memória verdadeira na porta do acidente ou aceitar a mentira confortável.",
+    "cena_c2_culpa": {
+        "texto": "Miguel cruza a porta e abraça a figura. Mas logo o corpo do garoto trava, os olhos ficam negros e a voz perde a vida. O disfarce desmorona: uma criatura escura, alta e deformada usa Helena como uma máscara. O painel avisa: **VIDA PENDENTE: 1 | VÍNCULO DE GUARDA EM PROCESSAMENTO**.\n\nA criatura revela a arma mais cruel: o esquecimento não foi causado pelo acidente. **Foi você quem pediu.** Após a morte de Miguel, incapaz de suportar a dor, você implorou: *'Tira os dois de mim.'*",
         "imagem": "https://placehold.co/800x400/440000/FFFFFF?text=O+Pedido+Original",
         "opcoes": [
             {"label": "C2.1) Atravessar a porta vermelha e recuperar a verdade (Encarar o passado e a culpa)", "destino": "final_c2_verdade", "reiniciar": True},
@@ -828,9 +826,6 @@ historia = {
         ]
     },
 
-    # ==========================================
-    # FINAIS DA ROTA C2
-    # ==========================================
     "final_c2_verdade": {
         "texto": "Você recusa a ilusão e atravessa a porta vermelha de volta à noite do acidente. Encarar a dor de ter pedido para esquecer o próprio filho rompe o domínio da entidade. \n\nA farsa da casa desmorona. A verdadeira Helena continua viva lá fora, e você, embora marcado pelo peso do que fez, liberta Miguel das amarras da culpa infinita.\n\n**FINAL: O PESO DA VERDADE**\n*A memória pode quebrar o coração, mas é a única coisa que permite o recomeço.*",
         "imagem": "https://placehold.co/800x400/220033/FFFFFF?text=O+Peso+Da+Verdade",
