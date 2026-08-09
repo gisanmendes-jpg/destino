@@ -1,103 +1,91 @@
 import streamlit as st
 
 # ==========================================
-# 1. ROTEIRO DO JOGO (DICIONÁRIO DE CENAS)
+# 1. MOTOR DE MEMÓRIA E ESTADO
 # ==========================================
-# Cada chave é o ID da cena. Dentro, temos o texto, a imagem e as opções.
+if 'cena_atual' not in st.session_state:
+    st.session_state.cena_atual = "cap1_parte1"
+    
+if 'memoria' not in st.session_state:
+    st.session_state.memoria = [] # Aqui o jogo "lembra" das suas escolhas
+
+def processar_escolha(nova_cena, memoria_ganha=None, reiniciar=False):
+    st.session_state.cena_atual = nova_cena
+    
+    # Se a escolha gerar uma memória nova, guardamos ela
+    if memoria_ganha and memoria_ganha not in st.session_state.memoria:
+        st.session_state.memoria.append(memoria_ganha)
+        
+    # Se for Game Over e o jogador quiser reiniciar
+    if reiniciar:
+        st.session_state.memoria = []
+
+# ==========================================
+# 2. ROTEIRO DO JOGO (COM PAGINAÇÃO)
+# ==========================================
 historia = {
-    "inicio": {
-        "texto": "A chuva cai pesada sobre a cidade. Você está parado em frente a um galpão abandonado. Seu contato disse que o alvo está lá dentro. Você nota duas entradas: a porta principal (meio arrombada) e uma janela estreita no segundo andar.",
-        "imagem": "https://placehold.co/800x400/222222/FFFFFF?text=Galpao+Abandonado",
+    "cap1_parte1": {
+        "texto": "Você acorda com um solavanco.\n\nPor alguns segundos, não abre os olhos. Há um ruído constante ao seu redor. Metal contra metal. O som distante de rodas correndo sobre trilhos.\n\nVocê verifica o horário. **00:16**. O relógio do trem também marca **00:16**. \n\nMas os segundos do seu celular continuam passando... e o relógio do trem permanece imóvel.",
+        "imagem": "https://placehold.co/800x400/111111/FFFFFF?text=O+Despertar",
         "opcoes": [
-            {"label": "Chutar a porta principal e entrar com tudo", "destino": "porta_principal"},
-            {"label": "Escalar até a janela silenciosamente", "destino": "janela_andar2"}
+            {"label": "Levantar a cabeça e olhar ao redor...", "destino": "cap1_parte2"} # Apenas avança o texto
         ]
     },
-    "porta_principal": {
-        "texto": "Você chuta a porta. Makima está sentada em uma poltrona no centro do galpão, com um sorriso enigmático. 'Você faz muito barulho', ela diz. Vários capangas saem das sombras.",
-        "imagem": "https://placehold.co/800x400/8B0000/FFFFFF?text=Emboscada",
+    "cap1_parte2": {
+        "texto": "Você não está sozinho. Do outro lado do corredor, uma mulher chora silenciosamente. Mais à frente, um policial mantém a cabeça baixa, com uma mancha escura de sangue na camisa.\n\nNo fundo do vagão, um homem de sobretudo olha diretamente para você. Sem piscar. E perto da porta, uma senhora muito velha segura uma bolsa contra o peito.",
+        "imagem": "https://placehold.co/800x400/222222/FFFFFF?text=Os+Passageiros",
         "opcoes": [
-            {"label": "Tentar lutar contra todos", "destino": "final_derrota_luta"},
-            {"label": "Jogar uma granada de fumaça e fugir", "destino": "final_fuga"}
+            {"label": "Continuar observando...", "destino": "cap1_parte3"}
         ]
     },
-    "janela_andar2": {
-        "texto": "Você escala com dificuldade, mas consegue entrar sem fazer barulho. Lá de cima, você vê Denji amarrado em uma cadeira e os capangas distraídos jogando cartas. A chave das algemas está na mesa.",
-        "imagem": "https://placehold.co/800x400/00008B/FFFFFF?text=Infiltracao",
+    "cap1_parte3": {
+        "texto": "Um alto-falante chia. Uma voz distorcida anuncia:\n— Próxima estação... Santa Lúcia.\n\nO trem começa a desacelerar. Pela janela escura, você vê uma plataforma vazia. A velha senhora abre os olhos e olha diretamente para você.\n\n— Escute com atenção. Não importa o que você ouvir... quando o trem parar, não olhe pela janela.\n\nMas já é tarde. Há alguém na plataforma. De costas. Usando a mesma roupa que você.",
+        "imagem": "https://placehold.co/800x400/050505/FFFFFF?text=A+Estacao+Santa+Lucia",
         "opcoes": [
-            {"label": "Descer sorrateiramente para pegar a chave", "destino": "pegar_chave"},
-            {"label": "Puxar o alarme de incêndio para assustá-los", "destino": "alarme"}
+            # AQUI ESTÁ A MÁGICA: Cada escolha salva uma memória diferente no st.session_state
+            {"label": "A) Continuar olhando pela janela para ver o rosto.", "destino": "cena_janela", "ganha_memoria": "olhou_janela"},
+            {"label": "B) Afastar-se imediatamente e exigir respostas da velha.", "destino": "cena_velha", "ganha_memoria": "obedeceu_velha"},
+            {"label": "C) Ir até a criança adormecida.", "destino": "cena_crianca", "ganha_memoria": "falou_crianca"},
+            {"label": "D) Ignorar todos e correr para o próximo vagão.", "destino": "cena_fuga", "ganha_memoria": "fugiu_vagao"}
         ]
     },
-    "pegar_chave": {
-        "texto": "Você pega a chave e liberta Denji. Juntos, vocês derrotam os capangas facilmente e escapam pela porta dos fundos.",
-        "imagem": "https://placehold.co/800x400/006400/FFFFFF?text=Vitoria",
-        "opcoes": [
-            {"label": "Jogar Novamente", "destino": "inicio"}
-        ]
+    "cena_janela": {
+        "texto": "Você ignora o aviso. A figura na plataforma vira o rosto lentamente... É você. Mas com um sorriso macabro. A janela de vidro de repente estilhaça.",
+        "imagem": "https://placehold.co/800x400/8B0000/FFFFFF?text=O+Reflexo",
+        "opcoes": [{"label": "Recomeçar pesadelo", "destino": "cap1_parte1", "reiniciar": True}]
     },
-    "alarme": {
-        "texto": "O alarme soa alto. Os capangas entram em pânico, mas um deles, assustado, atira na sua direção. Você é atingido no ombro e precisa recuar sem salvar o refém.",
-        "imagem": "https://placehold.co/800x400/222222/FFFFFF?text=Derrota",
-        "opcoes": [
-            {"label": "Tentar Novamente", "destino": "inicio"}
-        ]
-    },
-    "final_derrota_luta": {
-        "texto": "Eram muitos. Você é capturado e agora está amarrado ao lado do refém.",
-        "imagem": "https://placehold.co/800x400/222222/FFFFFF?text=Game+Over",
-        "opcoes": [
-            {"label": "Tentar Novamente", "destino": "inicio"}
-        ]
-    },
-    "final_fuga": {
-        "texto": "Você tosse com a fumaça, mas consegue escapar. Infelizmente, a missão falhou.",
-        "imagem": "https://placehold.co/800x400/222222/FFFFFF?text=Fuga",
-        "opcoes": [
-            {"label": "Tentar Novamente", "destino": "inicio"}
-        ]
-    }
+    # As outras cenas (cena_velha, cena_crianca, cena_fuga) entrariam aqui...
 }
 
 # ==========================================
-# 2. MOTOR DO JOGO E CALLBACKS
+# 3. INTERFACE (UI)
 # ==========================================
-# Inicializa a cena atual. Se o jogo acabou de abrir, vai para "inicio".
-if 'cena_atual' not in st.session_state:
-    st.session_state.cena_atual = "inicio"
+st.set_page_config(page_title="O Último Trem", layout="centered")
 
-def mudar_cena(nova_cena):
-    """Função callback para alterar o estado da cena com segurança."""
-    st.session_state.cena_atual = nova_cena
+# Barra lateral para testes (depois você pode esconder isso dos jogadores)
+with st.sidebar:
+    st.markdown("### 🧠 Memória do Jogo (Debug)")
+    st.write(st.session_state.memoria)
 
-# ==========================================
-# 3. INTERFACE DE USUÁRIO (UI)
-# ==========================================
-st.set_page_config(page_title="Ficção Interativa", layout="centered")
-
-# Puxa os dados da cena atual do dicionário
+# Renderiza a cena
 cena_dados = historia[st.session_state.cena_atual]
 
-# Mostra a imagem da cena
 st.image(cena_dados["imagem"], use_container_width=True)
-
-# Mostra o texto da cena (usando markdown para ficar bonito)
 st.markdown(f"### {cena_dados['texto']}")
-
 st.divider()
 
-# Cria os botões de escolha dinamicamente
-st.write("**O que você faz?**")
-
+# Renderiza os botões dinamicamente
 colunas = st.columns(len(cena_dados["opcoes"]))
 
 for i, opcao in enumerate(cena_dados["opcoes"]):
     with colunas[i]:
-        # O botão usa o on_click para chamar a função mudar_cena
-        # e kwargs para passar o destino exato
         st.button(
             label=opcao["label"], 
-            on_click=mudar_cena, 
-            kwargs={"nova_cena": opcao["destino"]},
-            key=f"btn_{st.session_state.cena_atual}_{i}" # Key única para evitar conflitos
+            on_click=processar_escolha, 
+            kwargs={
+                "nova_cena": opcao["destino"],
+                "memoria_ganha": opcao.get("ganha_memoria"),
+                "reiniciar": opcao.get("reiniciar", False)
+            },
+            key=f"btn_{st.session_state.cena_atual}_{i}"
         )
