@@ -74,7 +74,7 @@ historia = {
         "opcoes": [
             {"label": "Olhar o que tem no Vagão 2", "destino": "cap2_vagao2"} 
         ]
-    }, # <--- OLHA A VÍRGULA AQUI! É ELA QUE ESTAVA FALTANDO!
+    }, 
     
     "cena_luta": {
         "texto": "Adrenalina pura. Você arranca o extintor vermelho da parede. No momento em que a luz pisca, a criatura está bem na sua frente. Você balança o cilindro de metal com toda a força em direção à cabeça dela.",
@@ -82,7 +82,7 @@ historia = {
         "opcoes": [
             {"label": "Ver o resultado do golpe", "destino": "cap2_consequencia_luta"} 
         ]
-    }
+    },
     
     # === ADICIONE ESTAS CENAS AQUI PARA CORRIGIR O ERRO ===
     "cena_velha": {
