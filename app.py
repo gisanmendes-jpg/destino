@@ -592,8 +592,9 @@ historia = {
         ]
     },
     # === ROTA B1.1: A SÉTIMA REGRA E A RESTAURAÇÃO ===
+    # === ROTA B1.1: A SÉTIMA REGRA E A RESTAURAÇÃO ===
     "cena_b1_1_regra": {
-        "texto": "O painel pisca em vermelho: **RESTAURACÃO EM 00:30**. Você exige que Teresa cumpra sua parte e revele a sétima regra.\n\nCom a voz trêmula, Teresa confessa:\n— *A sétima regra diz o que fazer quando a Restauração escolhe alguém: não tente salvá-lo, não diga o nome dele, não toque nele e, quando terminar... finja que ele nunca existiu.*\n\nO relógio do vagão para de contagem regressiva e trava exatamente em **00:17**. As luzes ficam vermelhas e o alto-falante anuncia: **RESTAURAÇÃO INICIADA**.",
+        "texto": "O painel pisca em vermelho: **RESTAURAÇÃO EM 00:30**. Você exige que Teresa cumpra sua parte e revele a sétima regra.\n\nCom a voz trêmula, Teresa confessa:\n— *A sétima regra diz o que fazer quando a Restauração escolhe alguém: não tente salvá-lo, não diga o nome dele, não toque nele e, quando terminar... finja que ele nunca existiu.*\n\nO relógio do vagão para de contagem regressiva e trava exatamente em **00:17**. As luzes ficam vermelhas e o alto-falante anuncia: **RESTAURAÇÃO INICIADA**.",
         "imagem": "https://placehold.co/800x400/550000/FFFFFF?text=A+Setima+Regra",
         "opcoes": [
             {"label": "Descobrir o que é o Passageiro 007...", "destino": "cap2_b1_1_007"}
@@ -620,9 +621,27 @@ historia = {
         "texto": "O painel marca **IDENTIDADE: 5%**. O 007 está ficando totalmente sólido, assumindo perfeitamente seu rosto e sua voz, enquanto você desbota.\n\nVocê percebe a verdade terrível: **Cada pessoa restaurada alimenta o Passageiro 007**, tornando-o maior e mantendo-o existente. Teresa chorando percebe que, ao obedecer à sétima regra por sessenta anos, ela estava apenas alimentando o monstro.\n\nAo seu redor, os outros passageiros começam a se lembrar de que morreram. Ricardo sangra de novo. A mulher grita. As janelas racham e vozes de milhares de mortos ecoam de fora.",
         "imagem": "https://placehold.co/800x400/770000/FFFFFF?text=Alimentando+O+Monstro",
         "opcoes": [
-            # AS DUAS DECISÕES FINAIS DA ROTA B1.1
             {"label": "B1.1-A) Obedecer à Sétima Regra (Aceitar a Restauração e virar 007)", "destino": "final_b1_obedecer", "reiniciar": True},
             {"label": "B1.1-B) Quebrar a Sétima Regra (Acordar todos os mortos e colapsar o trem)", "destino": "final_b1_quebrar", "reiniciar": True}
+        ]
+    },
+
+    # ==========================================
+    # FINAIS DA ROTA B1.1
+    # ==========================================
+    "final_b1_obedecer": {
+        "texto": "Você para de lutar. A cópia estende a mão com um sorriso acolhedor: *'Não dói por muito tempo.'*\n\nVocê permite que a Restauração termine. Sua identidade se desfaz completamente. Suas lembranças evaporam. Os passageiros esquecem que você existiu. E o que restou de você passa a integrar o corpo do Passageiro 007, tornando a entidade mais forte para a próxima viagem.\n\nO trem continua correndo pela escuridão eterna, embalando os mortos em sua doce negação.\n\n**FINAL: O NOVO 007**\n*Algumas regras existem para proteger o esquecimento.*",
+        "imagem": "https://placehold.co/800x400/000000/FFFFFF?text=O+Novo+007",
+        "opcoes": [
+            {"label": "🎬 Explorar outra linha do tempo (Jogar Novamente)", "destino": "cap1_parte1", "reiniciar": True}
+        ]
+    },
+
+    "final_b1_quebrar": {
+        "texto": "Você recua da Restauração. Teresa abandona as regras e ajuda a fazer todos os passageiros lembrarem de suas mortes simultaneamente.\n\nO trem entra em colapso total. O painel grita: **CONTENÇÃO DO TREM: FALHA**. As portas de todos os vagões destravam ao mesmo tempo. O alto-falante anuncia: **OS MORTOS ESTÃO ACORDANDO**.\n\nDo lado de fora, milhares de braços e vozes batem nas janelas. As amarras do trem se despedaçam e, pela primeira vez em séculos, os passageiros cruzam o véu para o que existe de verdade do outro lado.\n\n**FINAL: A QUEDA DO TREM**\n*A negação chegou ao fim.*",
+        "imagem": "https://placehold.co/800x400/220033/FFFFFF?text=Os+Mortos+Acordando",
+        "opcoes": [
+            {"label": "🎬 Explorar outra linha do tempo (Jogar Novamente)", "destino": "cap1_parte1", "reiniciar": True}
         ]
     },
 
