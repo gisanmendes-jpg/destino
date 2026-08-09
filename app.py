@@ -281,6 +281,38 @@ historia = {
             {"label": "Virar-se para encarar a entidade...", "destino": "cap2_confronto_final"} # Cena a ser escrita
         ]
     },
+    "cena_a1_mensagens": {
+        "texto": "Você apaga a tela e esconde o celular. Teresa abaixa a mão, desconfiada, mas se afasta.\n\nO aparelho vibra novamente. Você checa disfarçadamente.\n**CERTO. ELA NÃO PODE SABER QUE ESTAMOS FALANDO.**\n\nVocê digita: *Quem é você?*\n**VOCÊ.**\n*Prova.*\n**VOCÊ TEM UMA CICATRIZ DEBAIXO DO JOELHO DIREITO. AOS 11 ANOS VOCÊ CAIU DO MURO DOS FUNDOS.**\n\nVocê toca a perna instintivamente. É verdade. É a primeira lembrança clara da sua infância. *Como sabe disso?*\n**PORQUE EU ESTAVA LÁ.**",
+        "imagem": "https://placehold.co/800x400/001122/FFFFFF?text=A+Cicatriz",
+        "opcoes": [
+            {"label": "Perguntar sobre os outros passageiros...", "destino": "cena_a1_foto"}
+        ]
+    },
+
+    "cena_a1_foto": {
+        "texto": "O celular vibra:\n**OLHE PARA MIGUEL. ELE NÃO PODE CHEGAR AO TERMINAL.**\n*Por quê?*\n**PORQUE FOI ASSIM QUE TUDO COMEÇOU.**\n\nDaniel se aproxima e pergunta com quem você está falando. Você guarda o telefone. Daniel dá um sorriso triste: *'Então começou mais cedo desta vez.'*\n\nO celular vibra. **NÃO ESCUTE DANIEL. ELE É A RAZÃO DE EU TER FICADO PRESO AQUI.**\n\nA contagem dispara no celular: **01:28... 01:27...**\n*O que acontece em São Gabriel?*\n**VOCÊ VAI ME VER DE NOVO. DENTRO DO TREM. QUANDO AS LUZES APAGAREM, NÃO DEIXE NINGUÉM TOCAR EM VOCÊ. PORQUE ELE AINDA NÃO TEM SEU ROSTO COMPLETO.**\n\nVocê digita: *Quem?*\nA resposta é uma fotografia. O interior do vagão. Atrás de você, há uma figura muito alta. Sem rosto. Inclinada sobre o seu ombro.",
+        "imagem": "https://placehold.co/800x400/110000/FFFFFF?text=A+Fotografia",
+        "opcoes": [
+            {"label": "Olhar para trás e confrontar Teresa...", "destino": "cena_a1_escuro"}
+        ]
+    },
+
+    "cena_a1_escuro": {
+        "texto": "Você se vira imediatamente. Não há nada. O celular avisa: **NÃO PROCURE POR ELE. ELA TRABALHA PARA ELE.**\n\nTeresa percebe. *'Entregue o telefone. Alguma coisa está usando você para entrar.'*\n\nA contagem chega a **00:19**. A voz do futuro manda você ir para o último banco. Teresa entra na sua frente, desesperada: *'Se você obedecer, vai repetir a sua morte.'*\n\n**00:10... 00:07... 00:05...**\n\nTeresa grita a mesma regra da mensagem: *'NÃO DEIXEM NINGUÉM TOCAR EM VOCÊ!'*\n\nAs luzes apagam. Escuridão total. Alguma coisa corre pelo teto. Vozes com o seu timbre ecoam pelo vagão discutindo.\nAlguém toca o seu ombro.",
+        "imagem": "https://placehold.co/800x400/000000/FFFFFF?text=Blecaute",
+        "opcoes": [
+            {"label": "Afastar-se violentamente...", "destino": "cena_a1_encontro"}
+        ]
+    },
+
+    "cena_a1_encontro": {
+        "texto": "As luzes retornam. Há uma pessoa a mais no último banco. Seu eu mais velho, com a cicatriz na sobrancelha.\n\nO celular vibra. **NÃO TENHA MEDO.** O homem sorri.\n\nEntão, uma nova mensagem chega. O remetente não é VOCÊ. É o **CONDUTOR**.\n\n**OBRIGADO POR TRAZÊ-LO DE VOLTA.**\n\nO sorriso do homem velho desaparece. Ele sussurra um 'Não...'. O alto-falante chia: *'Estação São Gabriel. Dois passageiros com a mesma identidade detectados.'*\n\nTeresa fecha os olhos: *'Outra vez não.'*",
+        "imagem": "https://placehold.co/800x400/331111/FFFFFF?text=O+Encontro",
+        "opcoes": [
+            {"label": "A1.1) Aproximar-se do seu eu mais velho", "destino": "cena_a1_1", "ganha_memoria": "aproximou_futuro"},
+            {"label": "A1.2) Destruir o celular e romper o contato", "destino": "cena_a1_2", "ganha_memoria": "destruiu_celular"}
+        ]
+    },
     
 }
 
