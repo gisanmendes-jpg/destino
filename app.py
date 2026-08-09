@@ -76,22 +76,41 @@ historia = {
         ]
     },
     
-    # === ADICIONE ESTAS CENAS AQUI PARA CORRIGIR O ERRO ===
     "cena_velha": {
-        "texto": "Você se afasta da janela e encara a velha senhora. 'O que está acontecendo?', você exige saber. Ela suspira, parecendo mais cansada do que antes. 'Eles sempre olham...', ela sussurra, antes que as luzes se apaguem completamente.",
-        "imagem": "https://placehold.co/800x400/222222/FFFFFF?text=A+Velha",
-        "opcoes": [{"label": "Recomeçar", "destino": "cap1_parte1", "reiniciar": True}]
+        "texto": "Você se afasta da janela e exige respostas.\n\nA velha olha fixamente para você. *'Não olhe para a janela'*, ela avisa, com a voz baixa e firme.\n\nQuase no mesmo instante, alguma coisa bate do lado de fora.\n\n*TOC.*\n\nVocê congela. *TOC. TOC.* Alguém bate mais forte.\n\nUma voz abafada pelo vidro sussurra: *'Ei...'*",
+        "imagem": "https://placehold.co/800x400/111122/FFFFFF?text=As+Batidas",
+        "opcoes": [
+            {"label": "Perguntar quem está aí", "destino": "cena_regras_1"}
+        ]
     },
-    "cena_crianca": {
-        "texto": "Você caminha até a criança. Os olhos dela são escuros demais, profundos demais para a idade. 'Eu estava esperando por você', ela repete, segurando sua mão com dedos que parecem gelo. 'O cobrador já vem.'",
-        "imagem": "https://placehold.co/800x400/111133/FFFFFF?text=A+Crianca",
-        "opcoes": [{"label": "Recomeçar", "destino": "cap1_parte1", "reiniciar": True}]
+    
+    "cena_regras_1": {
+        "texto": "Seu coração dispara. A voz é sua. Exatamente a sua.\n\n*Abre a porta*, a voz pede. A velha empalidece. *'Ele nunca aparece tão cedo'*, ela murmura. Ela segura seu braço com uma força surpreendente.\n\n*'Primeiro você precisa entender uma coisa. Existem regras. Se quiser chegar vivo ao fim da linha.'*\n\nEla aponta para a janela: *'Regra 1: Quando alguém do lado de fora souber seu nome, não olhe.'*\n\nAponta para a porta: *'Regra 2: Nunca desembarque onde exista alguém esperando por você. Porque não está esperando você chegar. Está esperando você sair.'*",
+        "imagem": "https://placehold.co/800x400/221111/FFFFFF?text=As+Regras",
+        "opcoes": [
+            {"label": "Ouvir o resto das regras...", "destino": "cena_regras_2"}
+        ]
     },
-    "cena_fuga": {
-        "texto": "Ignorando todos, você corre para a porta do fundo. Tenta girar a maçaneta com toda a força, mas ela está soldada. Atrás de você, o som de passos pesados começa a se aproximar pelo corredor.",
-        "imagem": "https://placehold.co/800x400/441111/FFFFFF?text=Sem+Saida",
-        "opcoes": [{"label": "Recomeçar", "destino": "cap1_parte1", "reiniciar": True}]
-    }
+
+    "cena_regras_2": {
+        "texto": "A velha continua: *'Regra 3: Se o relógio do trem marcar 00:17, não confie em ninguém neste vagão.'*\n\nVocê olha o painel. 00:16. *E quando ele mudar?* você pergunta. *'Significa que estamos perto da última estação.'*\n\nVocê percebe algo estranho e conta as pessoas no vagão. Seis pessoas. Mas a velha diz que há sete.\n\n*'Você consegue ver seis'*, ela diz. O homem de sobretudo ri. Antes que ela explique, a voz do lado de fora sussurra: *'Eu sou o sétimo.'*",
+        "imagem": "https://placehold.co/800x400/000000/FFFFFF?text=O+Setimo+Passageiro",
+        "opcoes": [
+            {"label": "Mas a porta está abrindo...", "destino": "cena_pegadas"}
+        ]
+    },
+
+    "cena_pegadas": {
+        "texto": "O trem para. O sinal toca.\n\n*'Regra 4: Nunca seja a primeira pessoa a sair'*, a velha avisa.\n\nA porta abre. Não há ninguém. Então, água pinga no chão. *TIC.* Pegadas invisíveis molhadas começam a entrar no vagão e param exatamente diante dos seus pés.\n\nUma respiração gélida toca sua orelha. A sua própria voz sussurra: *'Você não deveria ter acordado.'*\n\nAs luzes apagam. Alguém grita. Quando voltam, o trem está andando... e no banco onde você acordou, há alguém sentado de costas, usando a sua roupa.",
+        "imagem": "https://placehold.co/800x400/1a1a3a/FFFFFF?text=A+Invasao+Invisivel",
+        "opcoes": [
+            # AQUI DEFINIMOS AS MEMÓRIAS DA ROTA B
+            {"label": "B1) Exigir que a velha conte todas as regras.", "destino": "cena_b1", "ganha_memoria": "pressionou_velha"},
+            {"label": "B2) Ignorar a velha e ir até a pessoa sentada no seu lugar.", "destino": "cena_b2", "ganha_memoria": "enfrentou_copia"},
+            {"label": "B3) Perguntar à criança o que ela quis dizer.", "destino": "cena_b3", "ganha_memoria": "interrogou_crianca"},
+            {"label": "B4) Perguntar ao policial se ele também vê a cópia.", "destino": "cena_b4", "ganha_memoria": "falou_policial"}
+        ]
+    },
 }
 
 # ==========================================
