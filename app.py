@@ -752,6 +752,90 @@ historia = {
             {"label": "🎬 Explorar outra linha do tempo (Jogar Novamente)", "destino": "cap1_parte1", "reiniciar": True}
         ]
     },
+    # === ROTA C1: A NOITE DO ACIDENTE E A FARTA VEM DE HELENA ===
+    "cena_c1_acidente": {
+        "texto": "Você puxa Miguel para trás. A mulher na plataforma é Helena... ou pelo menos usa o rosto dela. Mas os pés não refletem nas poças do chão. Daniel se aproxima e começa a contar a verdade daquela noite chuvosa de estrada.\n\nUma chuva forte começa a cair *dentro* do vagão. O cheiro de asfalto molhado e borracha queimada toma o ar. A memória do acidente invade o espaço. Daniel confirma: seu carro perdeu o controle, vocês bateram, e naquela noite fria... você morreu no banco do motorista.",
+        "imagem": "https://placehold.co/800x400/111133/FFFFFF?text=A+Noite+Do+Acidente",
+        "opcoes": [
+            {"label": "Enfrentar a memória do acordo...", "destino": "cap2_c1_acordo"}
+        ]
+    },
+
+    "cap2_c1_acordo": {
+        "texto": "Na memória que toma conta do vagão, você ouve a voz na escuridão às **00:17**: *'Você quer viver?'*\n\nVocê lembra de ter respondido que sim, e o milagre aconteceu: seus ferimentos sumiram, mas as marcas e a morte recaíram sobre Miguel. Daniel revela a verdade brutal: Helena não estava no carro naquela noite. Ela sobreviveu. O que está na plataforma usando o rosto dela não é sua esposa, mas uma criatura faminta por completar a troca.\n\nO painel exibe: **VIDA DEVOLVIDA: 1 | VIDA PENDENTE: 1**.",
+        "imagem": "https://placehold.co/800x400/331111/FFFFFF?text=O+Acordo+Original",
+        "opcoes": [
+            {"label": "Ver a escolha final da Linha C1...", "destino": "cap2_c1_decisao"}
+        ]
+    },
+
+    "cap2_c1_decisao": {
+        "texto": "O painel pulsa em **00:17**. A estrada surge do outro lado das portas do trem, congelada no instante original.\n\nTeresa e Daniel alertam sobre os perigos: se você entrar na lembrança, Miguel terá que reviver a própria morte. Se apagar a memória para protegê-lo, a criatura vence usando o esquecimento, como fez das outras vezes.\n\nMiguel olha para você com lágrimas nos olhos e diz: *'Não esquece de mim de novo. Foi assim que ela ganhou da última vez.'*",
+        "imagem": "https://placehold.co/800x400/550000/FFFFFF?text=A+Escolha+Final+C1",
+        "opcoes": [
+            # AS DUAS OPÇÕES FINAIS DA LINHA C1
+            {"label": "C1.1) Lembrar até o fim (Entrar na lembrança e confrontar o acordo)", "destino": "final_c1_lembrar", "reiniciar": True},
+            {"label": "C1.2) Proteger Miguel e apagar a memória (Recusar o passado para salvar o garoto)", "destino": "final_c1_apagar", "reiniciar": True}
+        ]
+    },
+
+    # ==========================================
+    # FINAIS DA ROTA C1
+    # ==========================================
+    "final_c1_lembrar": {
+        "texto": "Você aceita mergulhar de volta no instante exato do acidente, revivendo a escolha que condenou seu filho. Ao confrontar o Condutor conscientemente na lembrança, o pacto de egoísmo é desfeito.\n\nA ilusão do trem estilhaça. A negação se quebra e a verdadeira noite da estrada absorve o impacto. Você e Miguel finalmente atravessam para o lado de lá, encarando as consequências reais daquela escolha, mas livres da prisão infinita.\n\n**FINAL: A VERDADE DA ESTRADA**\n*O passado não pode ser desfeito, mas pode deixar de ser uma mentira.*",
+        "imagem": "https://placehold.co/800x400/220033/FFFFFF?text=A+Verdade+Da+Estrada",
+        "opcoes": [
+            {"label": "🎬 Explorar outra linha do tempo (Jogar Novamente)", "destino": "cap1_parte1", "reiniciar": True}
+        ]
+    },
+
+    "final_c1_apagar": {
+        "texto": "Você recusa a dor de reviver o acidente e opta por apagar as memórias, protegendo Miguel de sofrer a morte de novo.\n\nAs lembranças se esvaem como fumaça, e a falsa Helena na plataforma desaparece na escuridão. O trem continua sua viagem silenciosa pelas trevas, e você abraça seu filho no banco do vagão, ignorando o que aconteceu no mundo real.\n\n**FINAL: O ABRAÇO NO ESCURO**\n*Algumas vezes, a ignorância é o único refúgio que resta aos mortos.*",
+        "imagem": "https://placehold.co/800x400/000000/FFFFFF?text=O+Abraco+No+Escuro",
+        "opcoes": [
+            {"label": "🎬 Explorar outra linha do tempo (Jogar Novamente)", "destino": "cap1_parte1", "reiniciar": True}
+        ]
+    },
+    # === ROTA C2: A MULHER NA PLATAFORMA E A CASA DA MENTIRA ===
+    "cena_c2_plataforma": {
+        "texto": "Você permite que Miguel vá ao encontro da mulher na plataforma que usa o rosto de Helena. Ela acerta detalhes que só sua esposa saberia, mas Daniel percebe o horror: *'Aquilo sabia a pergunta, não a resposta.'*\n\nMiguel cruza a porta e abraça a figura. Mas logo o corpo do garoto trava, os olhos ficam negros e a voz perde a vida. O disfarce desmorona: uma criatura escura, alta e deformada usa Helena como uma máscara. O painel avisa: **VIDA PENDENTE: 1 | VÍNCULO DE GUARDA EM PROCESSAMENTO**.",
+        "imagem": "https://placehold.co/800x400/220000/FFFFFF?text=A+ mascara+de+Helena",
+        "opcoes": [
+            {"label": "Encarar a verdade sobre a sua culpa...", "destino": "cap2_c2_culpa"}
+        ]
+    },
+
+    "cap2_c2_culpa": {
+        "texto": "A criatura revela a arma mais cruel: o esquecimento não foi causado pelo acidente. **Foi você quem pediu.** \n\nApós a morte de Miguel, incapaz de suportar a dor, você implorou: *'Tira os dois de mim.'* E agora, ao reconhecer a entidade como Helena, você deu autorização para ela assumir o papel de guardiã do garoto. O vínculo está em **97%**.\n\nTeresa grita que ainda há duas formas de quebrar o vínculo antes que ele se feche por completo: recuperar a memória verdadeira na porta do acidente ou aceitar a mentira confortável.",
+        "imagem": "https://placehold.co/800x400/440000/FFFFFF?text=O+Pedido+Original",
+        "opcoes": [
+            # AS DUAS OPÇÕES FINAIS DA LINHA C2
+            {"label": "C2.1) Atravessar a porta vermelha e recuperar a verdade (Encarar o passado e a culpa)", "destino": "final_c2_verdade", "reiniciar": True},
+            {"label": "C2.2) Ficar com 'Helena' e aceitar a nova memória (Escolher a mentira e a família perfeita)", "destino": "final_c2_mentira", "reiniciar": True}
+        ]
+    },
+
+    # ==========================================
+    # FINAIS DA ROTA C2
+    # ==========================================
+    "final_c2_verdade": {
+        "texto": "Você recusa a ilusão e atravessa a porta vermelha de volta à noite do acidente. Encarar a dor de ter pedido para esquecer o próprio filho rompe o domínio da entidade. \n\nA farsa da casa desmorona. A verdadeira Helena continua viva lá fora, e você, embora marcado pelo peso do que fez, liberta Miguel das amarras da culpa infinita.\n\n**FINAL: O PESO DA VERDADE**\n*A memória pode quebrar o coração, mas é a única coisa que permite o recomeço.*",
+        "imagem": "https://placehold.co/800x400/220033/FFFFFF?text=O+Peso+Da+Verdade",
+        "opcoes": [
+            {"label": "🎬 Explorar outra linha do tempo (Jogar Novamente)", "destino": "cap1_parte1", "reiniciar": True}
+        ]
+    },
+
+    "final_c2_mentira": {
+        "texto": "Você para de lutar. Aceita a casa azul, o jantar quente, o sorriso de Helena e a presença de Miguel. Você escolhe a mentira que devolve tudo o que perdeu, aceitando que a ignorância é um refúgio doce contra o horror de lembrar.\n\nAs portas do trem se fecham para o mundo real, enquanto você abraça a família perfeita construída sobre a sua própria negação.\n\n**FINAL: A CASA DOS MORTOS**\n*Algumas mentiras são quentes o suficiente para congelar a alma para sempre.*",
+        "imagem": "https://placehold.co/800x400/111122/FFFFFF?text=A+Casa+Dos+Mortos",
+        "opcoes": [
+            {"label": "🎬 Explorar outra linha do tempo (Jogar Novamente)", "destino": "cap1_parte1", "reiniciar": True}
+        ]
+    },
+    
+
     
     
 }
