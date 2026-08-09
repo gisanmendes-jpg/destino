@@ -54,7 +54,23 @@ historia = {
         "imagem": "https://placehold.co/800x400/8B0000/FFFFFF?text=O+Reflexo",
         "opcoes": [{"label": "Recomeçar pesadelo", "destino": "cap1_parte1", "reiniciar": True}]
     },
-    # As outras cenas (cena_velha, cena_crianca, cena_fuga) entrariam aqui...
+    
+    # === ADICIONE ESTAS CENAS AQUI PARA CORRIGIR O ERRO ===
+    "cena_velha": {
+        "texto": "Você se afasta da janela e encara a velha senhora. 'O que está acontecendo?', você exige saber. Ela suspira, parecendo mais cansada do que antes. 'Eles sempre olham...', ela sussurra, antes que as luzes se apaguem completamente.",
+        "imagem": "https://placehold.co/800x400/222222/FFFFFF?text=A+Velha",
+        "opcoes": [{"label": "Recomeçar", "destino": "cap1_parte1", "reiniciar": True}]
+    },
+    "cena_crianca": {
+        "texto": "Você caminha até a criança. Os olhos dela são escuros demais, profundos demais para a idade. 'Eu estava esperando por você', ela repete, segurando sua mão com dedos que parecem gelo. 'O cobrador já vem.'",
+        "imagem": "https://placehold.co/800x400/111133/FFFFFF?text=A+Crianca",
+        "opcoes": [{"label": "Recomeçar", "destino": "cap1_parte1", "reiniciar": True}]
+    },
+    "cena_fuga": {
+        "texto": "Ignorando todos, você corre para a porta do fundo. Tenta girar a maçaneta com toda a força, mas ela está soldada. Atrás de você, o som de passos pesados começa a se aproximar pelo corredor.",
+        "imagem": "https://placehold.co/800x400/441111/FFFFFF?text=Sem+Saida",
+        "opcoes": [{"label": "Recomeçar", "destino": "cap1_parte1", "reiniciar": True}]
+    }
 }
 
 # ==========================================
