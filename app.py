@@ -154,7 +154,49 @@ historia = {
             {"label": "C4) Soltar Miguel e permitir que ele saia.", "destino": "cena_c4", "ganha_memoria": "soltou_miguel"}
         ]
     },
+    "cena_fuga": {
+        "texto": "Você ignora todos. Ignora o aviso da velha. Apenas destranca a porta e atravessa a ponte metálica entre os vagões. Atrás de você, a velha grita para não fechar a porta, mas um solavanco do trem a bate com violência.\n\nAgora você está sozinho.\n\nVocê entra no próximo vagão. As luzes acendem. Há cerca de quarenta passageiros, mas ninguém responde aos seus chamados.\n\nVocê toca o ombro de um senhor de terno. O corpo cai para o lado. Os olhos estão abertos e acinzentados. Estão todos mortos.",
+        "imagem": "https://placehold.co/800x400/101010/FFFFFF?text=O+Vagao+Dos+Mortos",
+        "opcoes": [
+            {"label": "Olhar para o que ele segurava...", "destino": "cena_arquivo_1"}
+        ]
+    },
 
+    "cena_arquivo_1": {
+        "texto": "Um jornal cai no chão. A manchete diz: *ACIDENTE DE ÔNIBUS DEIXA 18 MORTOS*. A data: **1998**. O homem do banco é um dos mortos da foto.\n\nNos outros bancos: recortes de 2011, 2007. Pessoas que desapareceram ou morreram. Todos possuem uma etiqueta:\n*PASSAGEIRO 097 - DESTINO: CONCLUÍDO.*\n\nVocê corre para o final do vagão e encontra uma porta onde se lê: **ARQUIVO**.\n\nDentro, há uma sala com pastas. No centro de uma mesa, seis pastas se destacam. Você reconhece as fotos. A mulher. O policial. A criança. O homem de sobretudo. A velha. E a sua.",
+        "imagem": "https://placehold.co/800x400/332211/FFFFFF?text=O+Arquivo",
+        "opcoes": [
+            {"label": "Ler a pasta da mulher e do policial", "destino": "cena_arquivo_2"}
+        ]
+    },
+
+    "cena_arquivo_2": {
+        "texto": "LAURA MENEZES. Status Original: FALECIDA.\nRICARDO ALMEIDA. Status Original: FALECIDO.\n\nSua mão treme ao pegar a do menino. *MIGUEL*. Status Original: INDETERMINADO. Observação: *NÃO DEVE CHEGAR AO TERMINAL.*\n\nDANIEL VASCONCELOS (O sobretudo). Status Original: SOBREVIVENTE. Observação: *EMBARQUE NÃO AUTORIZADO.*\n\nTERESA (A velha). Não tem idade, mas uma foto de 1964. Status: CONDUTORA. Observação: *NÃO PERMITIR QUE DESEMBARQUE.*",
+        "imagem": "https://placehold.co/800x400/443322/FFFFFF?text=O+Passado+Escrito",
+        "opcoes": [
+            {"label": "Abrir a sua própria pasta", "destino": "cena_arquivo_3"}
+        ]
+    },
+
+    "cena_arquivo_3": {
+        "texto": "Você abre a sua. Na classificação diz: **PARADOXO**. O status original foi raspado com gilete.\n\n*MEMÓRIA SUPRIMIDA: SIM. MOTIVO: PROTEÇÃO DA LINHA.*\n\nNa última página, um aviso em vermelho: *SE ELE RECUPERAR A MEMÓRIA ANTES DA ESTAÇÃO FINAL, O CICLO RECOMEÇA.*\n\nEmbaixo de tudo, há uma 7ª pasta. *PASSAGEIRO 007. Identidade: Variável. Forma: Não definida.*\n\nObservação: *ASSUME A IDENTIDADE DE QUEM O RECONHECE.*",
+        "imagem": "https://placehold.co/800x400/8B0000/FFFFFF?text=Passageiro+007",
+        "opcoes": [
+            {"label": "Ouvir o barulho na porta...", "destino": "cena_arquivo_4"}
+        ]
+    },
+
+    "cena_arquivo_4": {
+        "texto": "*TOC. TOC. TOC.*\n\nUma voz vem do corredor dos mortos. *'Abre, sou eu.'* É o policial.\n\nMas logo atrás vem a voz da velha: *'Não abra!'*\nE a de Miguel: *'Ele não está sozinho!'*\n\nTodos começam a gritar e bater ao mesmo tempo. Você recua. Até que ouve uma quarta voz. Da sua própria garganta? Não, vem do outro lado da porta.\n\nA sua voz diz: *'Não abre para eles.'*\n\nO trinco da porta do Arquivo começa a girar sozinho.",
+        "imagem": "https://placehold.co/800x400/000000/FFFFFF?text=Batem+Na+Porta",
+        "opcoes": [
+            # AQUI ESTÃO AS MEMÓRIAS DA ROTA D
+            {"label": "D1) Abrir a porta rapidamente para o policial.", "destino": "cena_d1", "ganha_memoria": "confiou_policial"},
+            {"label": "D2) Segurar a maçaneta e investigar a pasta apagada.", "destino": "cena_d2", "ganha_memoria": "buscou_verdade"},
+            {"label": "D3) Perguntar por trás da porta algo que só Miguel saiba.", "destino": "cena_d3", "ganha_memoria": "testou_entidade"},
+            {"label": "D4) Procurar outra saída dentro do Arquivo.", "destino": "cena_d4", "ganha_memoria": "fugiu_arquivo"}
+        ]
+    },
     
 }
 
