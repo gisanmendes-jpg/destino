@@ -78,7 +78,7 @@ historia = {
     
     "cena_a1_mensagens": {
         "texto": "Você apaga a tela e esconde o celular. Teresa abaixa a mão, desconfiada, mas se afasta.\n\nO aparelho vibra novamente. Você checa disfarçadamente.\n**CERTO. ELA NÃO PODE SABER QUE ESTAMOS FALANDO.**\n\nVocê digita: *Quem é você?*\n**VOCÊ.**\n*Prova.*\n**VOCÊ TEM UMA CICATRIZ DEBAIXO DO JOELHO DIREITO. AOS 11 ANOS VOCÊ CAIU DO MURO DOS FUNDOS.**\n\nVocê toca a perna instintivamente. É verdade. É a primeira lembrança clara da sua infância. *Como sabe disso?*\n**PORQUE EU ESTAVA LÁ.**",
-        "imagem": "https://placehold.co/800x400/001122/FFFFFF?text=A+Cicatriz",
+        "imagem": "cicatriz.png",
         "opcoes": [
             {"label": "Perguntar sobre os outros passageiros...", "destino": "cena_a1_foto"}
         ]
