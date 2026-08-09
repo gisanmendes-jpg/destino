@@ -61,14 +61,14 @@ historia = {
     },
     "cena_janela_vibracao": {
         "texto": "Enquanto você tenta processar a visão, algo começa a vibrar violentamente no bolso da sua calça. É o seu celular.\n\nA tela acende. Não há número de chamada, apenas um texto grande e vermelho pairando sobre o fundo preto:\n\n**02:31... 02:30...**\n\nÉ uma contagem regressiva. Começou agora. E está correndo rápido.\n\nTeresa, a velha senhora, se aproxima de você, o rosto pálido. Ela viu o aparelho.\n— O que apareceu nesse telefone? — ela exige, sua voz tremendo.\n\nDo outro lado do vagão, o homem de sobretudo e o policial observam você. Até o **menino adormecido** acordou e olha em sua direção com olhos vazios. Pela janela, a plataforma de Santa Lúcia desaparece lentamente enquanto o trem volta a andar.\n\nUma nova mensagem pisca na tela do celular, sobrepondo a contagem:\n*NÃO MOSTRE ISSO A TERESA.*",
-        "imagem": "https://placehold.co/800x400/001100/FFFFFF?text=As+Mensagens",
+        "imagem": "msgs.png",
         "opcoes": [
             {"label": "Olhar para o reflexo na tela apagada...", "destino": "cena_a_decisao"}
         ]
     },
     "cena_a_decisao": {
         "texto": "Você sente o estômago revirar. Teresa estende a mão enrugada para você.\n— Me dê o telefone, agora!\n\nAntes que você responda, surge a última mensagem no visor, como um aviso final:\n**VOCÊ PRECISA ESCOLHER EM QUEM ACREDITAR ANTES QUE O CONDUTOR ENTRE.**\n\nO cronômetro marca **01:58**.\n\nVocê olha para Teresa. Depois para os outros passageiros estranhos. Miguel, o menino no fundo, parece estar chorando sem fazer som. Você percebe uma coisa perturbadora: a tela do celular reflete seu rosto. Mas por uma fração de segundo... o reflexo não é o seu, mas o daquele homem velho na plataforma.",
-        "imagem": "https://placehold.co/800x400/110000/FFFFFF?text=O+Reflexo",
+        "imagem": "reflexo,png",
         "opcoes": [
             {"label": "A1) Esconder o celular e confiar nas mensagens misteriosas", "destino": "cena_a1_mensagens", "ganha_memoria": "confiou_futuro"},
             {"label": "A2) Entregar o celular e confiar em Teresa", "destino": "cena_a2_teresa", "ganha_memoria": "entregou_celular"}
