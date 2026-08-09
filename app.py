@@ -26,21 +26,21 @@ def processar_escolha(nova_cena, memoria_ganha=None, reiniciar=False):
 historia = {
     "cap1_parte1": {
         "texto": "Você acorda com um solavanco violento, sua cabeça lateja.\n\nPor alguns segundos, você não abre os olhos, tentando lembrar como foi parar ali. A última lembrança é um borrão de chuva e faróis... nada mais. Há um ruído constante ao seu redor. Metal contra metal. O som rítmico e distante de rodas correndo sobre trilhos.\n\nVocê está em um trem. Mas como? E para onde?\n\nVocê tateia o bolso e puxa o celular para verificar as horas. O visor brilha: **00:16**. Você levanta os olhos para o painel digital na parede do vagão; o relógio oficial também marca **00:16**.\n\nVocê espera o tempo passar. Os segundos do seu celular continuam correndo... mas o relógio do trem permanece imóvel, congelado naquele minuto.",
-        "imagem": "https://placehold.co/800x400/111111/FFFFFF?text=O+Despertar",
+        "imagem": "despertar.png",
         "opcoes": [
             {"label": "Levantar a cabeça e olhar ao redor...", "destino": "cap1_parte2"} 
         ]
     },
     "cap1_parte2": {
         "texto": "Você força o corpo a levantar e olha o corredor do vagão. Você não está sozinho.\n\nDo outro lado, uma mulher chora silenciosamente, escondendo o rosto nas mãos. Mais à frente, um policial mantém a cabeça baixa, fixo no chão, com uma mancha escura de sangue secando na camisa.\n\nNo fundo do vagão, um homem de sobretudo escuro olha diretamente para você. Sem piscar. Perto dele, um **menino pequeno**, de uns nove anos, dorme encolhido no banco, abraçado a uma mochila.\n\nE bem perto de você, na poltrona da frente, uma senhora muito velha segura uma bolsa de mão contra o peito, observando tudo com olhos alertas.",
-        "imagem": "https://placehold.co/800x400/222222/FFFFFF?text=Os+Passageiros",
+        "imagem": "passageiros.png",
         "opcoes": [
             {"label": "Continuar observando...", "destino": "cap1_parte3"}
         ]
     },
     "cap1_parte3": {
         "texto": "Um alto-falante chia, quebrando o silêncio opressor do vagão. Uma voz distorcida e mecânica anuncia:\n— Próxima estação... Santa Lúcia.\n\nO trem começa a desacelerar, o ranger dos freios é ensurdecedor. Pela janela escura, onde antes só havia rastros de velocidade, você vê uma plataforma vazia e mal iluminada se aproximar.\n\nA velha senhora na sua frente quebra o próprio protocolo e se vira para você. Seus olhos transmitem um terror genuíno.\n\n— Escute com atenção, rapaz — ela sussurra apressada. — Meu nome é Teresa. Não importa o que você ouvir... quando o trem parar, **não olhe** pela janela.\n\nMas é tarde. O trem para. Instintivamente, você olha. Há alguém na plataforma. Alguém em pé, de costas, sob a luz amarelada do poste. Usando exatamente a mesma roupa que você veste agora.",
-        "imagem": "https://placehold.co/800x400/050505/FFFFFF?text=A+Estacao+Santa+Lucia",
+        "imagem": "estacao.png",
         "opcoes": [
             {"label": "A) Continuar olhando pela janela para ver o rosto da figura.", "destino": "cena_janela", "ganha_memoria": "olhou_janela"},
             {"label": "B) Afastar-se imediatamente e exigir respostas de Teresa.", "destino": "cena_velha", "ganha_memoria": "obedeceu_velha"},
@@ -54,7 +54,7 @@ historia = {
     # ===============================
     "cena_janela": {
         "texto": "Você ignora o aviso de Teresa e cola o rosto no vidro frio.\n\nA pessoa na plataforma começa a virar o rosto. Devagar. Primeiro o ombro. Depois o pescoço. O medo trava sua respiração quando o rosto aparece sob a luz.\n\nÉ você. Mas não como você é agora. É uma versão muito mais velha, com o rosto marcado pelo tempo e por cicatrizes, um corte profundo atravessando a sobrancelha esquerda. A roupa está suja, coberta por manchas que parecem sangue seco.\n\nO seu 'eu' velho caminha pela plataforma, acompanhando o vagão parado. Ele para diante da sua janela e vocês alinham as mãos no vidro. Nesse toque impossível, imagens violentas invadem sua mente como flashes: Fogo. Um grito de mulher. O choro de uma criança. E você... ajoelhado diante de destroços.\n\nO pânico faz você recuar.",
-        "imagem": "https://placehold.co/800x400/111111/FFFFFF?text=O+Seu+Futuro",
+        "imagem": "futuro.png",
         "opcoes": [
             {"label": "Recuperar o fôlego...", "destino": "cena_janela_vibracao"}
         ]
