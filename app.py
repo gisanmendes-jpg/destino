@@ -111,6 +111,51 @@ historia = {
             {"label": "B4) Perguntar ao policial se ele também vê a cópia.", "destino": "cena_b4", "ganha_memoria": "falou_policial"}
         ]
     },
+    "cena_crianca": {
+        "texto": "Você ignora a velha e vai até a criança. Os olhos dela encontram os seus. Sem confusão, sem susto.\n\n*'Você demorou'*, ela diz.\n\nVocê para diante do banco e se agacha. *'Por que estava esperando por mim?'*\n\nA criança olha para o seu rosto, depois para suas mãos. *'Porque você prometeu voltar.'*\n\nUma pressão surge atrás dos seus olhos. Uma tentativa de lembrar de um sonho. *'Eu nunca vi você antes'*, você diz.\n\nO rosto da criança muda para uma expressão triste. *'Você sempre fala isso.'*",
+        "imagem": "https://placehold.co/800x400/1a1a2e/FFFFFF?text=A+Crianca",
+        "opcoes": [
+            {"label": "Tentar lembrar...", "destino": "cena_passado_1"}
+        ]
+    },
+
+    "cena_passado_1": {
+        "texto": "*'Ainda não lembra da casa?'*, a criança pergunta. *'A nossa casa. Você morava lá comigo.'*\n\nSeu coração acelera. É impossível. Mas quando tenta formar a imagem da sua infância ou de onde morava, nada aparece. Como um rosto apagado em uma fotografia.\n\n*'Qual o seu nome?'* você pergunta. Ela hesita. *'Você disse para eu nunca contar. Antes de acontecer. Numa terça-feira... chovendo. Você ficou bravo. E foi embora.'*\n\nImagens explodem na sua mente: Chuva. Faróis. Gritos. Vidro quebrando. Você dirigindo. E uma voz infantil implorando para você não ir.",
+        "imagem": "https://placehold.co/800x400/223344/FFFFFF?text=As+Lembrancas",
+        "opcoes": [
+            {"label": "Olhar para o relógio do celular...", "destino": "cena_passado_2"}
+        ]
+    },
+
+    "cena_passado_2": {
+        "texto": "Seu celular marca 00:17. A criança fica pálida e manda você guardar. *'Foi essa hora. Do acidente.'*\n\nMais flashes: Asfalto molhado. Um caminhão. Uma buzina. A criança gritando *NÃO!*\n\nVocê recua, respirando rápido. *'Nós sofremos um acidente? Você morreu? Eu morri?'*\n\nA criança olha para você e responde com frieza: *'Eu não sei qual de nós morreu primeiro.'*\n\nAs portas do trem se abrem em Santa Lúcia. A criança vira a cabeça. *'É aqui. Onde começou. Viemos buscar minha mãe... Sua esposa.'*",
+        "imagem": "https://placehold.co/800x400/440000/FFFFFF?text=O+Acidente",
+        "opcoes": [
+            {"label": "Ouvir a discussão no vagão...", "destino": "cena_passado_3"}
+        ]
+    },
+
+    "cena_passado_3": {
+        "texto": "O homem de sobretudo levanta, aterrorizado. *'Não diga o nome dela!'* A criança segura sua mão e aponta para ele. *'Ele estava lá. No carro atrás da gente.'*\n\nO homem recua: *'Alguém que deveria ter morrido naquela noite. Mas não morreu.'*\n\nDe repente, uma voz feminina chama da plataforma: *'Miguel.'* A criança congela. Você segura o menino. *'É minha mãe!'*\n\nVocê olha para a silhueta na plataforma. A dor atravessa seu peito. Uma lembrança: uma porta vermelha. Uma aliança no chão.\n\nVocê sussurra o nome: *'Helena...'*",
+        "imagem": "https://placehold.co/800x400/111111/FFFFFF?text=Helena",
+        "opcoes": [
+            {"label": "Observar o relógio do trem...", "destino": "cena_passado_4"}
+        ]
+    },
+
+    "cena_passado_4": {
+        "texto": "O vagão inteiro fica em silêncio. Miguel para de lutar.\n\nEntão, o relógio do trem muda pela primeira vez: **00:17**.\n\nO alto-falante chia e diz apenas: *'Memória reconhecida.'*\n\nA mulher na plataforma sorri. Mas você percebe algo terrível: Helena nunca sorria daquele jeito.\n\nMiguel olha para você: *'É ela?'*",
+        "imagem": "https://placehold.co/800x400/550000/FFFFFF?text=Memoria+Reconhecida",
+        "opcoes": [
+            # AQUI ESTÃO AS MEMÓRIAS DA ROTA C
+            {"label": "C1) Segurar Miguel e exigir que ele conte sobre o acidente.", "destino": "cena_c1", "ganha_memoria": "segurou_miguel"},
+            {"label": "C2) Chamar por Helena para testar se é ela mesma.", "destino": "cena_c2", "ganha_memoria": "chamou_helena"},
+            {"label": "C3) Confrontar o homem de sobretudo sobre o acidente.", "destino": "cena_c3", "ganha_memoria": "interrogou_sobretudo"},
+            {"label": "C4) Soltar Miguel e permitir que ele saia.", "destino": "cena_c4", "ganha_memoria": "soltou_miguel"}
+        ]
+    },
+
+    
 }
 
 # ==========================================
