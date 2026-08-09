@@ -248,14 +248,37 @@ historia = {
     },
 
     "cena_arquivo_4": {
-        "texto": "*TOC. TOC. TOC.*\n\nUma voz vem do corredor dos mortos. *'Abre, sou eu.'* É o policial.\n\nMas logo atrás vem a voz da velha: *'Não abra!'*\nE a de Miguel: *'Ele não está sozinho!'*\n\nTodos começam a gritar e bater ao mesmo tempo. Você recua. Até que ouve uma quarta voz. Da sua própria garganta? Não, vem do outro lado da porta.\n\nA sua voz diz: *'Não abre para eles.'*\n\nO trinco da porta do Arquivo começa a girar sozinho.",
-        "imagem": "https://placehold.co/800x400/000000/FFFFFF?text=Batem+Na+Porta",
+        "texto": "A porta do Arquivo treme. Vozeirões se sobrepõem: o policial, a velha, a criança. E pior: a sua própria voz dizendo para não acreditar neles.\n\nVocê olha para a pasta do **PASSAGEIRO 007**: *Identidade: Variável. Forma: Não definida. Assume a identidade de quem o reconhece.*\n\nUma voz infantil do outro lado chora chamando por socorro. Você se aproxima e diz: *'Miguel?'*\n\nTeresa grita para você não dizer o nome! A voz lá fora muda de tom e sussurra: *'Você me reconheceu.'*",
+        "imagem": "https://placehold.co/800x400/110000/FFFFFF?text=O+Passageiro+007",
         "opcoes": [
-            # AQUI ESTÃO AS MEMÓRIAS DA ROTA D
-            {"label": "D1) Abrir a porta rapidamente para o policial.", "destino": "cena_d1", "ganha_memoria": "confiou_policial"},
-            {"label": "D2) Segurar a maçaneta e investigar a pasta apagada.", "destino": "cena_d2", "ganha_memoria": "buscou_verdade"},
-            {"label": "D3) Perguntar por trás da porta algo que só Miguel saiba.", "destino": "cena_d3", "ganha_memoria": "testou_entidade"},
-            {"label": "D4) Procurar outra saída dentro do Arquivo.", "destino": "cena_d4", "ganha_memoria": "fugiu_arquivo"}
+            {"label": "Olhar as marcas na porta...", "destino": "cena_arquivo_marcas"}
+        ]
+    },
+
+    "cena_arquivo_marcas": {
+        "texto": "Você recua e repara nas inscrições riscadas no metal da porta:\n*• Não responda à primeira voz.*\n*• Não diga nomes.*\n*• Ele não tem rosto até você dar um.*\n*• Se ele usar sua voz, não olhe nos olhos dele.*\n\nVocê corre de volta para a sua pasta. Encontra páginas rasgadas: *Causa da morte: Arrancada. Corpo recuperado: Não. Declaração de óbito: Não emitida. Ele não morreu na primeira vez. Foi devolvido.*",
+        "imagem": "https://placehold.co/800x400/221100/FFFFFF?text=A+Ficha+Rasgada",
+        "opcoes": [
+            {"label": "Alguém empurra a porta...", "destino": "cena_arquivo_porta"}
+        ]
+    },
+
+    "cena_arquivo_porta": {
+        "texto": "A porta se abre alguns centímetros. Uma mão ensanguentada com unhas quebradas se agarra ao batente. É Ricardo, o policial, com vidro na bochecha e ferimentos de acidente.\n\nEnquanto ele implora para entrar, seu rosto pisca rapidamente: vira Miguel, vira Teresa, vira Laura, vira você mesmo.\n\nA porta se fecha de repente. Na pasta do Passageiro 007, uma nova linha surge: *Modelo mais provável: VOCÊ.*\n\nVocê se vira e vê o seu reflexo na estante de vidro. Ele sorri. Você fecha os olhos e ouve sua própria voz: *'Não olha para mim.'*",
+        "imagem": "https://placehold.co/800x400/000000/FFFFFF?text=O+Reflexo+Sorri",
+        "opcoes": [
+            # AQUI ESTÃO AS DUAS ESCOLHAS FINAIS DA LINHA D
+            {"label": "D1) Continuar investigando sua pasta (Descobrir a verdade)", "destino": "cena_d1_verdade", "ganha_memoria": "investigou_origem"},
+            {"label": "D2) Abandonar o Arquivo e enfrentar a criatura", "destino": "cena_d2_enfrentar", "ganha_memoria": "enfrentou_007"}
+        ]
+    },
+
+    # === CONSEQUÊNCIA IMEDIATA DA ESCOLHA D2 (Gatilho) ===
+    "cena_d2_enfrentar": {
+        "texto": "Você decide largar os papéis, farto de mentiras, e toca a maçaneta da porta para enfrentar o que quer que esteja do outro lado.\n\nMas, no instante em que sua mão aperta o metal, uma voz sussurra bem perto do seu ouvido, de dentro do próprio cômodo escuro:\n\n— *Não precisa abrir. Eu já entrei.*",
+        "imagem": "https://placehold.co/800x400/550000/FFFFFF?text=Ele+Ja+Entrou",
+        "opcoes": [
+            {"label": "Virar-se para encarar a entidade...", "destino": "cap2_confronto_final"} # Cena a ser escrita
         ]
     },
     
