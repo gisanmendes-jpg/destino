@@ -764,6 +764,8 @@ historia = {
     },
 
     # === ROTA C1: A NOITE DO ACIDENTE E A FARTA VEM DE HELENA ===
+    # Certifique-se de que há uma vírgula logo após a chave anterior e cole isso dentro de 'historia':
+    
     "cena_c1_acidente": {
         "texto": "Você puxa Miguel para trás. A mulher na plataforma é Helena... ou pelo menos usa o rosto dela. Mas os pés não refletem nas poças do chão. Daniel se aproxima e começa a contar a verdade daquela noite chuvosa de estrada.\n\nUma chuva forte começa a cair *dentro* do vagão. O cheiro de asfalto molhado e borracha queimada toma o ar. A memória do acidente invade o espaço. Daniel confirma: seu carro perdeu o controle, vocês bateram, e naquela noite fria... você morreu no banco do motorista.",
         "imagem": "https://placehold.co/800x400/111133/FFFFFF?text=A+Noite+Do+Acidente",
@@ -789,6 +791,7 @@ historia = {
         ]
     },
 
+    
     # === ROTA C2: A MULHER NA PLATAFORMA E A CASA DA MENTIRA ===
     "cena_c2_plataforma": {
         "texto": "Você permite que Miguel vá ao encontro da mulher na plataforma que usa o rosto de Helena. Ela acerta detalhes que só sua esposa saberia, mas Daniel percebe o horror: *'Aquilo sabia a pergunta, não a resposta.'*\n\nMiguel cruza a porta e abraça a figura. Mas logo o corpo do garoto trava, os olhos ficam negros e a voz perde a vida. O disfarce desmorona: uma criatura escura, alta e deformada usa Helena como uma máscara. O painel avisa: **VIDA PENDENTE: 1 | VÍNCULO DE GUARDA EM PROCESSAMENTO**.",
@@ -808,25 +811,6 @@ historia = {
     },
 
     
-    # === ROTA C2: A MULHER NA PLATAFORMA E A CASA DA MENTIRA ===
-    "cena_c2_plataforma": {
-        "texto": "Você permite que Miguel vá ao encontro da mulher na plataforma que usa o rosto de Helena. Ela acerta detalhes que só sua esposa saberia, mas Daniel percebe o horror: *'Aquilo sabia a pergunta, não a resposta.'*\n\nMiguel cruza a porta e abraça a figura. Mas logo o corpo do garoto trava, os olhos ficam negros e a voz perde a vida. O disfarce desmorona: uma criatura escura, alta e deformada usa Helena como uma máscara. O painel avisa: **VIDA PENDENTE: 1 | VÍNCULO DE GUARDA EM PROCESSAMENTO**.",
-        "imagem": "https://placehold.co/800x400/220000/FFFFFF?text=A+ mascara+de+Helena",
-        "opcoes": [
-            {"label": "Encarar a verdade sobre a sua culpa...", "destino": "cap2_c2_culpa"}
-        ]
-    },
-
-    "cap2_c2_culpa": {
-        "texto": "A criatura revela a arma mais cruel: o esquecimento não foi causado pelo acidente. **Foi você quem pediu.** \n\nApós a morte de Miguel, incapaz de suportar a dor, você implorou: *'Tira os dois de mim.'* E agora, ao reconhecer a entidade como Helena, você deu autorização para ela assumir o papel de guardiã do garoto. O vínculo está em **97%**.\n\nTeresa grita que ainda há duas formas de quebrar o vínculo antes que ele se feche por completo: recuperar a memória verdadeira na porta do acidente ou aceitar a mentira confortável.",
-        "imagem": "https://placehold.co/800x400/440000/FFFFFF?text=O+Pedido+Original",
-        "opcoes": [
-            # AS DUAS OPÇÕES FINAIS DA LINHA C2
-            {"label": "C2.1) Atravessar a porta vermelha e recuperar a verdade (Encarar o passado e a culpa)", "destino": "final_c2_verdade", "reiniciar": True},
-            {"label": "C2.2) Ficar com 'Helena' e aceitar a nova memória (Escolher a mentira e a família perfeita)", "destino": "final_c2_mentira", "reiniciar": True}
-        ]
-    },
-
     # ==========================================
     # FINAIS DA ROTA C2
     # ==========================================
