@@ -50,37 +50,29 @@ historia = {
         ]
     },
     "cena_janela": {
-        "texto": "Você ignora o aviso da velha. A curiosidade é mais forte que o medo.\n\nA figura na plataforma termina de se virar. O sangue congela nas suas veias.\n\nO rosto é o seu. Exatamente o seu.\n\nMas há algo profundamente errado. Os olhos são perfeitamente brancos, sem íris ou pupilas. A boca está esticada em um sorriso que parece rasgar as bochechas.\n\nO seu 'duplo' levanta a mão e encosta um dedo longo no vidro, pelo lado de fora.\n\n*TOC.*\n\nO vidro trinca.\nA velha grita: 'Abaixe-se!'\n\nAs portas do trem se abrem com um chiado violento. O vento gelado invade o vagão, apagando as luzes. A coisa que tem o seu rosto acabou de entrar.",
-        "imagem": "https://placehold.co/800x400/1a1a2e/FFFFFF?text=A+Invasao",
+        "texto": "Você ignora a velha.\n\nA pessoa na plataforma começa a virar o rosto. Devagar. Primeiro o ombro. Depois o pescoço. Então o rosto aparece sob a luz amarelada de um dos postes.\n\nSeu corpo inteiro esfria. É você. Mas muito mais velho. O rosto marcado, um corte profundo atravessando a sobrancelha esquerda. A roupa coberta por manchas que parecem sangue seco.\n\nEle caminha acompanhando o trem. Vocês alinham as mãos no vidro. Imagens invadem sua mente: Fogo. Uma mulher caída. A criança. O policial atirando. A velha gritando. E você... ajoelhado diante de dezenas de corpos.",
+        "imagem": "https://placehold.co/800x400/111111/FFFFFF?text=O+Seu+Futuro",
         "opcoes": [
-            {"label": "Obedecer à velha e se jogar no chão", "destino": "cena_chao"},
-            {"label": "Correr desesperadamente para o próximo vagão", "destino": "cena_fuga_vagao2"},
-            {"label": "Pegar o extintor de incêndio na parede para se defender", "destino": "cena_luta"}
-        ]
-    },
-
-    # === RAMIFICAÇÕES QUE NASCEM DA CENA DA JANELA ===
-    "cena_chao": {
-        "texto": "Você se atira no chão entre os bancos, prendendo a respiração. No escuro, ouve passos pesados arrastando pelo corredor. *Shh... shh... shh...*\n\nOs passos param exatamente ao seu lado. Você vê dois pés pálidos descalços a centímetros do seu rosto.",
-        "imagem": "https://placehold.co/800x400/000000/FFFFFF?text=No+Escuro",
-        "opcoes": [
-            {"label": "Ficar completamente imóvel", "destino": "cap2_sobrevivencia"} # Cena a ser escrita depois
+            {"label": "Tentar ouvir o que ele diz...", "destino": "cena_janela_mulher"}
         ]
     },
     
-    "cena_fuga_vagao2": {
-        "texto": "Você gira nos calcanhares e corre. O corredor parece infinito. Você passa pelo homem de sobretudo, que agora está rindo alto. Alcança a porta do próximo vagão, gira a trava e entra com tudo, trancando-a atrás de si.",
-        "imagem": "https://placehold.co/800x400/221111/FFFFFF?text=Fuga+Para+Frente",
+    "cena_janela_mulher": {
+        "texto": "Seu outro eu aproxima o rosto do vidro. Você lê seus lábios:\n\n**NÃO DESÇA.**\n\nO trem para na Estação Santa Lúcia. A mulher que chorava se levanta, desesperada, e corre para a plataforma ignorando os avisos do policial.\n\nEla ri de alívio por estar fora. Até que outra mulher, idêntica a ela, aparece na escuridão. A cópia sussurra algo no ouvido da passageira original, que imediatamente para de lutar e sorri de forma macabra para você.\n\nAs portas se fecham. A mulher fica para trás, junto com a sua cópia.",
+        "imagem": "https://placehold.co/800x400/220000/FFFFFF?text=A+Copia+Na+Plataforma",
         "opcoes": [
-            {"label": "Olhar o que tem no Vagão 2", "destino": "cap2_vagao2"} 
+            {"label": "Olhar o celular vibrando no seu bolso...", "destino": "cena_janela_celular"}
         ]
-    }, 
+    },
     
-    "cena_luta": {
-        "texto": "Adrenalina pura. Você arranca o extintor vermelho da parede. No momento em que a luz pisca, a criatura está bem na sua frente. Você balança o cilindro de metal com toda a força em direção à cabeça dela.",
-        "imagem": "https://placehold.co/800x400/550000/FFFFFF?text=Reacao",
+    "cena_janela_celular": {
+        "texto": "Sem sinal. Mas as mensagens chegam. Remetente: **VOCÊ**.\n\n*EU AVISEI PARA NÃO OLHAR.*\n*AGORA ELE SABE ONDE VOCÊ ESTÁ.*\n*NÃO CONFIE NA VELHA.*\n*E NÃO DEIXE A CRIANÇA CHEGAR À ESTAÇÃO FINAL.*\n\nA velha pede para ver o seu telefone. A criança diz para não entregar. O policial questiona sobre o aparelho e o homem de sobretudo apenas ri.\n\nUma última mensagem pisca na tela, seguida por uma contagem que se move em tempo real:\n**VOCÊ TEM 3 MINUTOS PARA DECIDIR EM QUEM ACREDITAR.**\n\n02:59... 02:58... 02:57...",
+        "imagem": "https://placehold.co/800x400/002200/FFFFFF?text=02:59",
         "opcoes": [
-            {"label": "Ver o resultado do golpe", "destino": "cap2_consequencia_luta"} 
+            {"label": "A1) Mostrar as mensagens para a velha", "destino": "cena_a1", "ganha_memoria": "confiou_velha"},
+            {"label": "A2) Esconder o celular e confiar nas mensagens", "destino": "cena_a2", "ganha_memoria": "confiou_mensagens"},
+            {"label": "A3) Interrogar a criança", "destino": "cena_a3", "ganha_memoria": "interrogou_crianca"},
+            {"label": "A4) Confrontar o homem de sobretudo", "destino": "cena_a4", "ganha_memoria": "enfrentou_sobretudo"}
         ]
     },
     
