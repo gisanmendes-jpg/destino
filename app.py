@@ -26,7 +26,7 @@ def processar_escolha(nova_cena, memoria_ganha=None, reiniciar=False):
 historia = {
     "cap1_parte1": {
         "texto": "Você acorda com um solavanco.\n\nPor alguns segundos, não abre os olhos. Há um ruído constante ao seu redor. Metal contra metal. O som distante de rodas correndo sobre trilhos.\n\nVocê verifica o horário. **00:16**. O relógio do trem também marca **00:16**. \n\nMas os segundos do seu celular continuam passando... e o relógio do trem permanece imóvel.",
-        "imagem": "https://placehold.co/800x400/111111/FFFFFF?text=O+Despertar",
+        "imagem": "despertar.png",
         "opcoes": [
             {"label": "Levantar a cabeça e olhar ao redor...", "destino": "cap1_parte2"} 
         ]
