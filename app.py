@@ -338,6 +338,13 @@ historia = {
             {"label": "B) PEGAR A MÃO DO SEU EU MAIS VELHO (Aceitar a vida)", "destino": "final_egoista", "reiniciar": True}
         ]
     },
+    "cena_a2_teresa": {
+        "texto": "Você decide não confiar na coisa que usa o seu rosto. Estende a mão e entrega o aparelho para Teresa.\n\nMas, no exato instante em que os dedos dela tocam o metal frio do celular... a tela pisca e muda.\n\nSurge apenas uma frase em letras maiúsculas:\n\n**VOCÊ FEZ ISSO DA ÚLTIMA VEZ TAMBÉM.**",
+        "imagem": "https://placehold.co/800x400/8B0000/FFFFFF?text=O+Ciclo+Se+Repete",
+        "opcoes": [
+            {"label": "Ver a reação de Teresa...", "destino": "cap2_teresa_explica"} 
+        ]
+    },
     "cap2_teresa_explica": {
         "texto": "No instante em que Teresa toca o celular, a tela fica preta.\n\n— *Ele sabe que eu toquei*, ela diz. O aparelho vibra na mão dela e acende.\n\n**OLÁ, TERESA.**\n**AINDA ESTÁ TENTANDO CONSERTAR 1964?**\n\nO rosto da velha perde a cor. Você pega o telefone de volta: — *Quem morreu em 1964?*\nTeresa implora para você não usar a palavra *'morreu'*. As luzes piscam duas vezes.\n\nOutra mensagem chega para você: **ELA NÃO CONTA PORQUE TEM VERGONHA.**",
         "imagem": "https://placehold.co/800x400/111111/FFFFFF?text=O+Segredo+De+1964",
