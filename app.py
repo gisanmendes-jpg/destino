@@ -700,7 +700,58 @@ historia = {
             {"label": "🎬 Explorar outra linha do tempo (Jogar Novamente)", "destino": "cap1_parte1", "reiniciar": True}
         ]
     },
-    
+    # === ROTA B2: QUEBRAR A REGRA E ABORDAR A CÓPIA ===
+    "cena_b2_quebrar": {
+        "texto": "Você ignora Teresa e dá o primeiro passo na direção da figura. Você não quer dizer o seu nome, só quer ver o rosto dela.\n\nMas, quando você avança... a figura fala sem se virar, usando a sua exata voz:\n\n— *Você sempre chega mais perto. Foi assim que eu entrei da primeira vez.*\n\nTeresa empalidece. — *Não escute.*\n\nA figura começa a virar o rosto lentamente e diz:\n— *Pergunta para ela o que aconteceu com os outros seis.*",
+        "imagem": "https://placehold.co/800x400/331111/FFFFFF?text=Os+Outros+Seis",
+        "opcoes": [
+            {"label": "Encarar a figura...", "destino": "cap2_entidade_revela"}
+        ]
+    },
+
+    "cap2_entidade_revela": {
+        "texto": "Você se aproxima e olha nos olhos da cópia. No instante em que o reconhecimento é mútuo, algo terrível acontece.\n\nA entidade não ataca você com violência. Ela começa a **roubar**. Primeiro o rosto, depois o timbre da voz, as lembranças, o jeito de respirar. Cada segundo que passa torna a cópia mais real, mais vívida... enquanto você começa a desbotar, tornando-se uma silhueta borrada.\n\nMiguel olha da cópia para você, completamente perdido, sem saber qual de vocês é o verdadeiro pai. O horror se instala: o 007 não precisa matar você. Ele só precisa fazer com que todos acreditem que ele é você.",
+        "imagem": "https://placehold.co/800x400/110000/FFFFFF?text=O+Roubo+De+Identidade",
+        "opcoes": [
+            {"label": "B2.1) Tentar provar aos passageiros que você é o verdadeiro", "destino": "cena_b2_1_provar", "ganha_memoria": "tentou_provar"},
+            {"label": "B2.2) Parar de disputar a identidade e seguir a cópia", "destino": "cena_b2_2_seguir", "ganha_memoria": "seguiu_copia"}
+        ]
+    },
+
+    "cena_b2_1_provar": {
+        "texto": "Você tenta provar quem é, citando lembranças que só você tem. Mas a cópia usa a mesma voz, com os mesmos detalhes exatos.\n\nDaniel franze a testa: *'Ambos sabem das mesmas coisas.'* Miguel recua, aterrorizado com os dois rostos idênticos. O trem inteiro começa a tratar você como o intruso, enquanto a cópia assume seu lugar por completo.",
+        "imagem": "https://placehold.co/800x400/330000/FFFFFF?text=Quem+E+O+Verdadeiro",
+        "opcoes": [
+            {"label": "Ver o desate da sua identidade...", "destino": "final_b2_perdeu", "reiniciar": True}
+        ]
+    },
+
+    "cena_b2_2_seguir": {
+        "texto": "Você desiste de lutar pela máscara. Se a entidade quer ser você, que carregue o peso disso. Você se vira e decide segui-la até o fundo do vagão, rumo ao escuro de onde ela veio.\n\nTeresa grita para você voltar, mas as portas se abrem para um silêncio absoluto.",
+        "imagem": "https://placehold.co/800x400/000000/FFFFFF?text=Seguindo+A+Copia",
+        "opcoes": [
+            {"label": "Atravessar para o desconhecido...", "destino": "final_b2_seguiu", "reiniciar": True}
+        ]
+    },
+
+    # ==========================================
+    # FINAIS DA ROTA B2
+    # ==========================================
+    "final_b2_perdeu": {
+        "texto": "Ninguém mais reconhece você. O trem o silencia como uma anomalia e a cópia assume sua vida dentro do vagão.\n\n**FINAL: O INTRUSO**\n*Quando você perde o seu rosto, o mundo esquece que você existiu.*",
+        "imagem": "https://placehold.co/800x400/000000/FFFFFF?text=O+Intruso",
+        "opcoes": [
+            {"label": "🎬 Explorar outra linha do tempo (Jogar Novamente)", "destino": "cap1_parte1", "reiniciar": True}
+        ]
+    },
+
+    "final_b2_seguiu": {
+        "texto": "Você caminha junto à sua cópia para dentro da escuridão dos trilhos, aceitando que a identidade nunca foi fixa.\n\n**FINAL: ALÉM DO ESPELHO**\n*O reflexo tornou-se o dono do caminho.*",
+        "imagem": "https://placehold.co/800x400/111122/FFFFFF?text=Alem+Do+Espelho",
+        "opcoes": [
+            {"label": "🎬 Explorar outra linha do tempo (Jogar Novamente)", "destino": "cap1_parte1", "reiniciar": True}
+        ]
+    },
     
     
 }
