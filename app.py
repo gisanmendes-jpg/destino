@@ -550,6 +550,7 @@ historia = {
     },
 # === ROTA B1: OBEDECER E EXIGIR RESPOSTAS ===
     # === ROTA B1: AS REGRAS DOS MORTOS ===
+    # === ROTA B1: AS REGRAS DOS MORTOS ===
     "cena_b1_obedecer": {
         "texto": "Você recua. Não olha novamente para a figura sentada no seu antigo lugar. Teresa segura seu braço: *'Isso. Não reconheça.'*\n\n— *Eu obedeci. Agora você vai falar.* — você diz. Desde que acordou, ela só impõe proibições. Teresa hesita, mas acaba cedendo e enumerando as regras que protegem os passageiros.\n\n— *Primeira: se alguém do lado de fora souber seu nome, não olhe, porque chama aquilo que você ainda acredita ser. Segunda: nunca desembarque onde alguém o espera, porque morto nenhum deveria estar esperando outro morto...*",
         "imagem": "https://placehold.co/800x400/112233/FFFFFF?text=As+Regras+Dos+Mortos",
@@ -587,11 +588,11 @@ historia = {
         "imagem": "https://placehold.co/800x400/770000/FFFFFF?text=00:30",
         "opcoes": [
             # AS DUAS OPÇÕES FINAIS DA LINHA B1
-            {"label": "B1.1) Continuar obedecendo Teresa e exigir a sétima regra", "destino": "cena_b1_1_final", "ganha_memoria": "obedeceu_teresa_fim"},
-            {"label": "B1.2) Exigir saber quem criou as regras e confrontar a origem", "destino": "cena_b1_2_final", "ganha_memoria": "questionou_criador"}
+            {"label": "B1.1) Continuar obedecendo Teresa e exigir a sétima regra", "destino": "cena_b1_1_regra", "ganha_memoria": "obedeceu_teresa_fim"},
+            {"label": "B1.2) Exigir saber quem criou as regras e confrontar a origem", "destino": "cena_b1_2_recusa", "ganha_memoria": "questionou_criador"}
         ]
     },
-    # === ROTA B1.1: A SÉTIMA REGRA E A RESTAURAÇÃO ===
+
     # === ROTA B1.1: A SÉTIMA REGRA E A RESTAURAÇÃO ===
     "cena_b1_1_regra": {
         "texto": "O painel pisca em vermelho: **RESTAURAÇÃO EM 00:30**. Você exige que Teresa cumpra sua parte e revele a sétima regra.\n\nCom a voz trêmula, Teresa confessa:\n— *A sétima regra diz o que fazer quando a Restauração escolhe alguém: não tente salvá-lo, não diga o nome dele, não toque nele e, quando terminar... finja que ele nunca existiu.*\n\nO relógio do vagão para de contagem regressiva e trava exatamente em **00:17**. As luzes ficam vermelhas e o alto-falante anuncia: **RESTAURAÇÃO INICIADA**.",
@@ -645,24 +646,7 @@ historia = {
         ]
     },
 
-    # ==========================================
-    # FINAIS DA ROTA B1.1
-    # ==========================================
-    "final_b1_obedecer": {
-        "texto": "Você para de lutar. A cópia estende a mão com um sorriso acolhedor: *'Não dói por muito tempo.'*\n\nVocê permite que a Restauração termine. Sua identidade se desfaz completamente. Suas lembranças evaporam. Os passageiros esquecem que você existiu. E o que restou de você passa a integrar o corpo do Passageiro 007, tornando a entidade mais forte para a próxima viagem.\n\nO trem continua correndo pela escuridão eterna, embalando os mortos em sua doce negação.\n\n**FINAL: O NOVO 007**\n*Algumas regras existem para proteger o esquecimento.*",
-        "imagem": "https://placehold.co/800x400/000000/FFFFFF?text=O+Novo+007",
-        "opcoes": [
-            {"label": "🎬 Explorar outra linha do tempo (Jogar Novamente)", "destino": "cap1_parte1", "reiniciar": True}
-        ]
-    },
-
-    "final_b1_quebrar": {
-        "texto": "Você recusa a Restauração. Teresa abandona as regras e ajuda a fazer todos os passageiros lembrarem de suas mortes simultaneamente.\n\nO trem entra em colapso total. O painel grita: **CONTENÇÃO DO TREM: FALHA**. As portas de todos os vagões destravam ao mesmo tempo. O alto-falante anuncia: **OS MORTOS ESTÃO ACORDANDO**.\n\nDo lado de fora, milhares de braços e vozes batem nas janelas. As amarras do trem se despedaçam e, pela primeira vez em séculos, os passageiros cruzam o véu para o que existe de verdade do outro lado.\n\n**FINAL: A QUEDA DO TREM**\n*A negação acabou. O destino chegou.*",
-        "imagem": "https://placehold.co/800x400/220033/FFFFFF?text=Os+Mortos+Acordando",
-        "opcoes": [
-            {"label": "🎬 Explorar outra linha do tempo (Jogar Novamente)", "destino": "cap1_parte1", "reiniciar": True}
-        ]
-    },
+    
     # === ROTA B1.2: A ORIGEM DAS REGRAS E O CONDUTOR ===
     "cena_b1_2_recusa": {
         "texto": "Você se recusa a aceitar as regras cegamente e exige saber quem as criou. Teresa tenta impedi-lo, mas a cópia zomba: *'Essa é uma pergunta muito melhor.'*\n\nSob pressão, Teresa confessa que foi ela quem escreveu as regras após fazer um pacto em 1964 para salvar sua filha que estava morrendo. Mas ao ser questionada sobre quem as ditou, ela aponta para o teto e sussurra: *'O Condutor.'*",
