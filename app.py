@@ -313,6 +313,47 @@ historia = {
             {"label": "A1.2) Destruir o celular e romper o contato", "destino": "cena_a1_2", "ganha_memoria": "destruiu_celular"}
         ]
     },
+    "cap2_teresa_explica": {
+        "texto": "No instante em que Teresa toca o celular, a tela fica preta.\n\n— *Ele sabe que eu toquei*, ela diz. O aparelho vibra na mão dela e acende.\n\n**OLÁ, TERESA.**\n**AINDA ESTÁ TENTANDO CONSERTAR 1964?**\n\nO rosto da velha perde a cor. Você pega o telefone de volta: — *Quem morreu em 1964?*\nTeresa implora para você não usar a palavra *'morreu'*. As luzes piscam duas vezes.\n\nOutra mensagem chega para você: **ELA NÃO CONTA PORQUE TEM VERGONHA.**",
+        "imagem": "https://placehold.co/800x400/111111/FFFFFF?text=O+Segredo+De+1964",
+        "opcoes": [
+            {"label": "Exigir explicações de Teresa...", "destino": "cap2_o_ciclo"}
+        ]
+    },
+
+    "cap2_o_ciclo": {
+        "texto": "Você exige que Teresa explique. Ela respira fundo.\n— *Existem maneiras de os mortos permanecerem presos. Um lugar. Uma pessoa. Culpa. Medo...*\n\nEla segura seu pulso e revela a verdade: Aquilo na plataforma não era seu futuro. Era algo que já aconteceu muitas vezes. Você já esteve aqui.\n\n— *Quantas vezes?* — você pergunta, sentindo o corpo perder a força.\n— *Eu parei de contar depois da décima segunda.*\n\nVocê está revivendo esse pesadelo. Você pergunta o motivo de não se lembrar, e Teresa diz: — *Porque você pediu. Toda vez.*",
+        "imagem": "https://placehold.co/800x400/220000/FFFFFF?text=A+Decima+Segunda+Vez",
+        "opcoes": [
+            {"label": "Perguntar o motivo do pedido...", "destino": "cap2_revelacao_miguel"}
+        ]
+    },
+
+    "cap2_revelacao_miguel": {
+        "texto": "Teresa hesita antes de responder. — *Porque na primeira vez que você lembrou de tudo... você tentou matar Miguel.*\n\nA criança recua. O celular vibra violentamente com 4 mensagens seguidas:\n**MENTIRA. MENTIRA. MENTIRA. MENTIRA.**\n\nTeresa explica que alguém convenceu você de que, se Miguel chegasse à estação final, tudo começaria novamente. Exatamente o que a mensagem no celular orienta: **'NÃO DEIXE A CRIANÇA CHEGAR À ESTAÇÃO FINAL'**.\n\nDaniel se levanta furioso. — *Ela sabe o porquê. Porque foi ela quem começou isso. Pergunta quem era a criança de 1964!*",
+        "imagem": "https://placehold.co/800x400/331111/FFFFFF?text=O+Alvo",
+        "opcoes": [
+            {"label": "Olhar a tela do celular...", "destino": "cap2_foto_1964"}
+        ]
+    },
+
+    "cap2_foto_1964": {
+        "texto": "O celular recebe uma foto em preto e branco. Uma plataforma ferroviária. Santa Lúcia - 17/08/1964. Teresa, jovem, segurando a mão de uma menina de seis anos.\n\nOutra mensagem: **DIGA O NOME, TERESA.**\nEla treme. — *Nomes chamam os mortos.*\n\nA foto no celular muda. A menina agora está pálida e macabra atrás de Teresa. O trem começa a frear fora de hora. \n\n— *São Gabriel não deveria vir agora,* — Teresa diz em pânico. — *Alguém mudou a rota.*",
+        "imagem": "https://placehold.co/800x400/111111/FFFFFF?text=A+Mudanca+De+Rota",
+        "opcoes": [
+            {"label": "Olhar pela janela do trem...", "destino": "cap2_estacao_gabriel"}
+        ]
+    },
+
+    "cap2_estacao_gabriel": {
+        "texto": "Na tela, o remetente confessa: **EU. ELA ME DEVE UMA PASSAGEIRA.**\n\nNa plataforma de São Gabriel, há uma menina esperando. Cabelos molhados, vestido antigo. Ela sorri e a voz atravessa o vidro:\n— *Mãe. Você prometeu voltar.*\n\nO nome do remetente no celular muda de VOCÊ para **CONDUTOR**.\nUma única frase surge: **UMA DÍVIDA PRECISA SER PAGA.**",
+        "imagem": "https://placehold.co/800x400/000000/FFFFFF?text=A+Divida",
+        "opcoes": [
+            # AS DUAS DECISÕES DA LINHA A2
+            {"label": "A2.1) Ficar ao lado de Teresa e impedir que ela saia", "destino": "cena_a2_1_proteger", "ganha_memoria": "protegeu_teresa"},
+            {"label": "A2.2) Usar Teresa como isca para revelar o Condutor", "destino": "cena_a2_2_isca", "ganha_memoria": "usou_isca"}
+        ]
+    },
     
 }
 
